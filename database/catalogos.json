@@ -1,0 +1,2918 @@
+{
+  "generado": "2026-10-27T00:11:15.865Z",
+  "fuente": "plantilla/plantilla.xlsm",
+  "oficinas": [
+    "Amazonas",
+    "Áncash",
+    "Apurímac",
+    "Arequipa",
+    "Ayacucho",
+    "Cajamarca",
+    "Cusco",
+    "Huancavelica",
+    "Huánuco",
+    "Ica",
+    "Junín",
+    "La_Libertad",
+    "Lambayeque",
+    "Lima_Norte",
+    "Lima_Sur",
+    "Loreto",
+    "Madre_de_Dios",
+    "Moquegua",
+    "Pasco",
+    "Piura",
+    "Puno",
+    "San_Martín",
+    "Tacna",
+    "Tumbes",
+    "Ucayali"
+  ],
+  "meses": [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  ],
+  "transportes": [
+    "Terrestre fluvial",
+    "Terrestre-Rural",
+    "Solo via aérea (recorrido directo)",
+    "Terrestre ",
+    "Otros",
+    "Gabinete"
+  ],
+  "calidades": [
+    "Buena",
+    "Regular ",
+    "Mala"
+  ],
+  "acciones": {
+    "31.1 Preoperativa y denuncias": {
+      "1.1 RHO en toda la cadena": [
+        "Inscripción",
+        "Modificación de Registro",
+        "Modificación de Datos",
+        "Suspensión",
+        "Habilitación",
+        "Cancelación"
+      ],
+      "1.2 ITF": [
+        "Instalación",
+        "Modificación de instalación"
+      ],
+      "1.3 Certificado para GNV, GNC, GNL": [
+        "Diseño",
+        "Fin de construcción",
+        "Modificación de diseño",
+        "Funcionamiento",
+        "Modificación de funcionamiento"
+      ],
+      "1.4 Actas pruebas y conformidad": [
+        "VPH tuberías",
+        "VPH tanques"
+      ],
+      "1.5 Denuncias": [
+        "Agentes formales",
+        "Medidas de seguridad",
+        "Informalidad"
+      ]
+    },
+    "31.2 Comercialización": {
+      "2.1 PRICE": [
+        "Price"
+      ],
+      "2.2 RIC": [
+        "RIC"
+      ],
+      "2.3 Control Volumétrico": [
+        "Control volumétrico"
+      ],
+      "2.4 GPS": [
+        "GPS"
+      ],
+      "2.5 SCOP": [
+        "SCOP"
+      ],
+      "2.6 SPIC": [
+        "SPIC"
+      ],
+      "2.7 Envasado, pintado y canje de cilindros de GLP": [
+        "Envasado de cilindros de GLP",
+        "Pintado de cilindros de GLP",
+        "Canje de cilindros de GLP",
+        "Integridad de cilindro de GLP"
+      ],
+      "2.8 Informalidad de oficio": [
+        "Informalidad de oficio"
+      ],
+      "2.9 Informalidad de comiso de equipos": [
+        "Comiso"
+      ],
+      "2.10 Minería ilegal": [
+        "Minería ilegal",
+        "Medidas de seguridad"
+      ],
+      "2.11 Fiscalización Orientativa": [
+        "Orientativa SCOP"
+      ],
+      "2.12 Fiscalización de Pólizas": [
+        "Verificación de pólizas en el módulo de Pólizas"
+      ]
+    },
+    "31.3 Instalaciones y MT": {
+      "2.13 Fiscalización por empadronamiento de transporte con GPS-PD": [
+        "Fiscalización por empadronamiento de transporte con GPS-PD"
+      ],
+      "3.1 Criticidad de instalaciones": [
+        "Criticidad de instalaciones",
+        "Medidas de seguridad"
+      ],
+      "3.2 Seguridad de LV GLP - Revalidación": [
+        "Seguridad de LV GLP",
+        "Medidas de seguridad"
+      ],
+      "3.3 Seguridad de CD y RD - Revalidación": [
+        "Seguridad de CD ó RD de GLP",
+        "Medidas de seguridad"
+      ],
+      "3.4 Certificación y seguridad de CD, RD y LV de GLP": [
+        "Certific.PE ó Distribuidor a granel de GLP"
+      ],
+      "3.5 Criticidad de cilindros GLP": [
+        "Criticidad de cilindros de GLP",
+        "Medidas de seguridad"
+      ],
+      "3.6 Demás agentes (CDMV, Transp Acuático, CM y otros)": [
+        "Fiscalización operativa de los demás agentes"
+      ],
+      "3.7 Actos inseguros": [
+        "Actos inseguros",
+        "Medidas de seguridad"
+      ],
+      "3.8 PDJ": [
+        "PDJ",
+        "Condiciones de seguridad con observaciones",
+        "Medidas de seguridad"
+      ],
+      "3.9 MT - Terrestre de CL": [
+        "MT líquidos",
+        "Medidas de seguridad"
+      ],
+      "3.10 MT - GLP en cilindros": [
+        "MT - GLP en cilindros",
+        "Medidas de seguridad"
+      ],
+      "3.11 Transporte-Distribución a Granel de GLP": [
+        "MT - GLP a granel",
+        "Medidas de seguridad"
+      ],
+      "3.12 MT y unidades móviles de GNC y GNL": [
+        "MT - GNC y GNL",
+        "Medidas de seguridad"
+      ],
+      "3.13 Agentes con instalaciones fijas de GNV, GNC y GNL": [
+        "Instalaciones fijas de GNV, GNC y GNL",
+        "Medidas de seguridad"
+      ],
+      "3.14 Emergencias": [
+        "Agentes formales",
+        "Medidas de seguridad",
+        "Informalidad"
+      ]
+    },
+    "31.4 Calidad y cantidad": {
+      "4.1 Calidad EVP (muestrales)": [
+        "Calidad EVP (muestrales)"
+      ],
+      "4.2 Calidad plantas de abast. o refinerías (censales)": [
+        "Calidad plantas de abast. o refinerías (censales)"
+      ],
+      "4.3 Metrología EVP (muestrales / censales)": [
+        "Metrología EVP (muestrales / censales)"
+      ],
+      "4.4 Ctrol Peso GLP envasado plantas u otros centros distrib. o comerc.": [
+        "Control Peso GLP envasado plantas u otros centros distrib. o comerc."
+      ],
+      "4.5 Etiquetado cilindros de GLP": [
+        "Etiquetado cilindros de GLP"
+      ],
+      "4.6 Calidad en EVP, plantas de abast. o refinerías (espec. o de parte)": [
+        "Calidad en EVP, plantas de abast. o refinerías (espec. o de parte)"
+      ],
+      "4.7 Metrología o peso en EVP, plantas u otros centros de comerc. (espec. o de parte)": [
+        "Metrología en EVP o plantas u otros centros de comerc.(espec. o de parte)",
+        "Control peso en EVP o plantas u otros centros de comerc. (espec. o de parte)"
+      ],
+      "4.8 Calidad fuera del registro de hidrocarburos ": [
+        "Calidad fuera del registro de hidrocarburos"
+      ]
+    }
+  },
+  "agentes": {
+    "Consumidores directos de combustibles líquidos y OPDH": [
+      "Consumidor directo de combustible líquido con capacidad hasta 5 MB",
+      "Consumidor directo de combustible líquido con capacidad de 5  a 50 MB",
+      "Consumidor directo de combustible líquido con capacidad mayor a 50 MB",
+      "Consumidor directo de OPDH y combustible líquido con capacidad hasta 5 MB",
+      "Consumidor directo de OPDH y combustible líquido con capacidad de 5 a 50 MB",
+      "Consumidores directos de otros productos derivados de los hidrocarburos",
+      "Consumidores menores",
+      "Consumidor directo móvil",
+      "Consumidores directos con instalaciones estratégicas",
+      "Consumidor directo con instalaciones estratégicas temporales"
+    ],
+    "Consumidores directos de gas natural": [
+      "Consumidor directo de GNV",
+      "Establecimiento destinado al suministro de GNV en sistemas integrados de transporte",
+      "Consumidor directo de GNC",
+      "Consumidor directo de GNL"
+    ],
+    "Consumidores directos de GLP y redes de distribución": [
+      "Consumidores directos de GLP con capacidad menor o igual a 1000 gln",
+      "Consumidores directos de GLP con capacidad mayor a 1000 gln",
+      "Redes de distribución de GLP con capacidad menor o igual a 1000 gln",
+      "Redes de distribución de GLP con capacidad mayor a 1000 gln",
+      "Consumidor directo con instalaciones estratégicas de GLP con capacidad mayor a 1000 gln",
+      "Consumidor directo con instalaciones estratégicas de GLP con capacidad menor o igual a 1000 gln"
+    ],
+    "Distribuidores mayoristas, Importadores y Comercializadores": [
+      "Distribuidores minoristas de combustible líquidos",
+      "Distribuidor mayorista de combustibles líquidos",
+      "Importador en tránsito de combustibles líquidos y OPDH",
+      "Mayorista de otros productos derivados de hidrocarburos",
+      "Comercializador de GLP (RCD 155-2015)",
+      "Comercializador de combustible para embarcaciones",
+      "Comercializador en estación de carga GNL",
+      "Comercializadores de combustibles de aviación",
+      "Operador de estación de carga GNL",
+      "Importador de GLP",
+      "Exportador de GLP"
+    ],
+    "Envasadoras de GLP": [
+      "Empresa envasadora sin instalaciones",
+      "Plantas envasadoras GLP"
+    ],
+    "EVP combustibles de uso automotor": [
+      "Estación de servicios / Grifos",
+      "Estación de servicio con gasocentro de GLP",
+      "Grifos rurales con almacenamiento en cilindros",
+      "Grifos flotantes",
+      "Gasocentros de GLP",
+      "Establecimiento de venta al público de GNV",
+      "Estación de servicios con GNV",
+      "Estación de servicios con GLP y GNV",
+      "Gasocentro de GLP con establecimiento de venta al público de GNV"
+    ],
+    "Instalaciones de compresión, transferencia y descompresión de gas natural": [
+      "Estacion de compresión de gas natural",
+      "Estación de licuefacción de GNL",
+      "Centro de descompresión de gas natural",
+      "Unidad de trasvase de GNC"
+    ],
+    "Locales de venta de GLP": [
+      "Locales de venta de GLP en cilindros con capacidad menor o igual a 5,000 Kg",
+      "Locales de venta de GLP en cilindros con capacidad mayor a 5,000 Kg"
+    ],
+    "Medios de transporte": [
+      "Distribuidor de GLP a granel",
+      "Transporte de combustibles líquidos y OPDH (Camión tanque / Camión cisterna)",
+      "Barcazas / Chata / Buques tanque",
+      "Transporte de combustibles líquidos y OPDH (Vagones cisternas)",
+      "Transporte de GLP a granel (Camión tanque / Camión cisterna)",
+      "Transporte de GLP en cilindros (Camión pick up, camioneta baranda y camiones)",
+      "Distribuidor de GLP en cilindros (Camión pick up, camioneta baranda y camiones)",
+      "Vehículo transportador de GNC",
+      "Vehículo transportador de GNL",
+      "Unidad móvil de GNL-GN",
+      "Transporte de combustibles líquidos y/u otros productos derivados de los hidrocarburos en cilindros",
+      "Transporte de combustibles líquidos en contenedores intermedios",
+      "Unidad móvil de GNC",
+      "Unidad móvil de GNL",
+      "Transporte terrestre de petróleo crudo"
+    ],
+    "Plantas de abastecimiento y despacho": [
+      "Planta de abastecimiento de GLP",
+      "Planta de abastecimiento de combustibles líquidos",
+      "Planta de abastecimiento en aeropuerto",
+      "Estación de carga de GNL",
+      "Estación de carga de GNC"
+    ],
+    "Productores y Plantas de procesamiento": [
+      "Refinerías topping",
+      "Refinerías complejas",
+      "Procesamiento de gas natural y LGN",
+      "Planta de lubricantes y grasas",
+      "Planta de procesamiento de gas natural",
+      "Productores",
+      "Procesamiento de GNL"
+    ],
+    "Informal": [
+      "Venta de combustibles líquidos",
+      "Venta de cilindros de GLP",
+      "Comiso de combustibles líquidos",
+      "Comiso de cilindros de GLP"
+    ],
+    "Usuario final": [
+      "Usuario final afectado"
+    ],
+    "Vehículos de transporte terrestre internacional ingresan al territorio nacional": [
+      "Medición de combustibles líquidos"
+    ],
+    "Vehículos de transporte terrestre internacional habilitados por la MTC": [
+      "Control de Calidad de los combustibles de los vehículos que ingresan al territorio nacional"
+    ]
+  },
+  "ubicacion": {
+    "Amazonas": {
+      "01 Chachapoyas": [
+        "01 Chachapoyas",
+        "02 Asunción",
+        "03 Balsas",
+        "04 Cheto",
+        "05 Chiliquin",
+        "06 Chuquibamba",
+        "07 Granada",
+        "08 Huancas",
+        "09 La Jalca",
+        "10 Leimebamba",
+        "11 Levanto",
+        "12 Magdalena",
+        "13 Mariscal Castilla",
+        "14 Molinopampa",
+        "15 Montevideo",
+        "16 Olleros",
+        "17 Quinjalca",
+        "18 San Francisco de Daguas",
+        "19 San Isidro de Maino",
+        "20 Soloco",
+        "21 Sonche"
+      ],
+      "02 Bagua": [
+        "01 Bagua",
+        "02 Aramango",
+        "04 El Parco",
+        "05 Imaza",
+        "06 La Peca"
+      ],
+      "03 Bongará": [
+        "01 Jumbilla",
+        "02 Chisquilla",
+        "03 Churuja",
+        "04 Corosha",
+        "05 Cuispes",
+        "06 Florida",
+        "07 Jazan",
+        "08 Recta",
+        "09 San Carlos",
+        "10 Shipasbamba",
+        "11 Valera",
+        "12 Yambrasbamba"
+      ],
+      "04 Condorcanqui": [
+        "01 Nieva",
+        "02 El Cenepa",
+        "03 Río Santiago"
+      ],
+      "05 Luya": [
+        "01 Lamud",
+        "02 Camporredondo",
+        "03 Cocabamba",
+        "04 Colcamar",
+        "05 Conila",
+        "06 Inguilpata",
+        "07 Longuita",
+        "08 Lonya Chico",
+        "09 Luya",
+        "10 Luya Viejo",
+        "11 María",
+        "12 Ocalli",
+        "13 Ocumal",
+        "14 Pisuquia",
+        "15 Providencia",
+        "16 San Cristóbal",
+        "17 San Francisco de Yeso",
+        "18 San Jerónimo",
+        "19 San Juan de Lopecancha",
+        "20 Santa Catalina",
+        "21 Santo Tomas",
+        "22 Tingo",
+        "23 Trita"
+      ],
+      "06 Rodríguez de Mendoza": [
+        "01 San Nicolás",
+        "02 Chirimoto",
+        "03 Cochamal",
+        "04 Huambo",
+        "05 Limabamba",
+        "06 Longar",
+        "07 Mariscal Benavides",
+        "08 Milpuc",
+        "09 Omia",
+        "10 Santa Rosa",
+        "11 Totora",
+        "12 Vista Alegre"
+      ],
+      "07 Utcubamba": [
+        "01 Bagua Grande",
+        "02 Cajaruro",
+        "03 Cumba",
+        "04 El Milagro",
+        "05 Jamalca",
+        "06 Lonya Grande",
+        "07 Yamon"
+      ]
+    },
+    "Áncash": {
+      "01 Huaraz": [
+        "01 Huaraz",
+        "02 Cochabamba",
+        "03 Colcabamba",
+        "04 Huanchay",
+        "05 Independencia",
+        "06 Jangas",
+        "07 La Libertad",
+        "08 Olleros",
+        "09 Pampas Grande",
+        "10 Pariacoto",
+        "11 Pira",
+        "12 Tarica"
+      ],
+      "02 Aija": [
+        "01 Aija",
+        "02 Coris",
+        "03 Huacllan",
+        "04 La Merced",
+        "05 Succha"
+      ],
+      "03 Antonio Raymondi": [
+        "01 Llamellin",
+        "02 Aczo",
+        "03 Chaccho",
+        "04 Chingas",
+        "05 Mirgas",
+        "06 San Juan de Rontoy"
+      ],
+      "04 Asunción": [
+        "01 Chacas",
+        "02 Acochaca"
+      ],
+      "05 Bolognesi": [
+        "01 Chiquian",
+        "02 Abelardo Pardo Lezameta",
+        "03 Antonio Raymondi",
+        "04 Aquia",
+        "05 Cajacay",
+        "06 Canis",
+        "07 Colquioc",
+        "08 Huallanca",
+        "09 Huasta",
+        "10 Huayllacayan",
+        "11 La Primavera",
+        "12 Mangas",
+        "13 Pacllon",
+        "14 San Miguel de Corpanqui",
+        "15 Ticllos"
+      ],
+      "06 Carhuaz": [
+        "01 Carhuaz",
+        "02 Acopampa",
+        "03 Amashca",
+        "04 Anta",
+        "05 Ataquero",
+        "06 Marcara",
+        "07 Pariahuanca",
+        "08 San Miguel de Aco",
+        "09 Shilla",
+        "10 Tinco",
+        "11 Yungar"
+      ],
+      "07 Carlos Fermín Fitzcarrald": [
+        "01 San Luis",
+        "02 San Nicolás",
+        "03 Yauya"
+      ],
+      "08 Casma": [
+        "01 Casma",
+        "02 Buena Vista Alta",
+        "03 Comandante Noel",
+        "04 Yautan"
+      ],
+      "09 Corongo": [
+        "01 Corongo",
+        "02 Aco",
+        "03 Bambas",
+        "04 Cusca",
+        "05 La Pampa",
+        "06 Yanac",
+        "07 Yupan"
+      ],
+      "10 Huari": [
+        "01 Huari",
+        "02 Anra",
+        "03 Cajay",
+        "04 Chavin de Huantar",
+        "05 Huacachi",
+        "06 Huacchis",
+        "07 Huachis",
+        "08 Huantar",
+        "09 Masin",
+        "10 Paucas",
+        "11 Ponto",
+        "12 Rahuapampa",
+        "13 Rapayan",
+        "14 San Marcos",
+        "15 San Pedro de Chana",
+        "16 Uco"
+      ],
+      "11 Huarmey": [
+        "01 Huarmey",
+        "02 Cochapeti",
+        "03 Culebras",
+        "04 Huayan",
+        "05 Malvas"
+      ],
+      "12 Huaylas": [
+        "01 Caraz",
+        "02 Huallanca",
+        "03 Huata",
+        "04 Huaylas",
+        "05 Mato",
+        "06 Pamparomas",
+        "07 Pueblo Libre",
+        "08 Santa Cruz",
+        "09 Santo Toribio",
+        "10 Yuracmarca"
+      ],
+      "13 Mariscal Luzuriaga": [
+        "01 Piscobamba",
+        "02 Casca",
+        "03 Eleazar Guzmán Barron",
+        "04 Fidel Olivas Escudero",
+        "05 Llama",
+        "06 Llumpa",
+        "07 Lucma",
+        "08 Musga"
+      ],
+      "14 Ocros": [
+        "01 Ocros",
+        "02 Acas",
+        "03 Cajamarquilla",
+        "04 Carhuapampa",
+        "05 Cochas",
+        "06 Congas",
+        "07 Llipa",
+        "08 San Cristóbal de Rajan",
+        "09 San Pedro",
+        "10 Santiago de Chilcas"
+      ],
+      "15 Pallasca": [
+        "01 Cabana",
+        "02 Bolognesi",
+        "03 Conchucos",
+        "04 Huacaschuque",
+        "05 Huandoval",
+        "06 Lacabamba",
+        "07 Llapo",
+        "08 Pallasca",
+        "09 Pampas",
+        "10 Santa Rosa",
+        "11 Tauca"
+      ],
+      "16 Pomabamba": [
+        "01 Pomabamba",
+        "02 Huayllan",
+        "03 Parobamba",
+        "04 Quinuabamba"
+      ],
+      "17 Recuay": [
+        "01 Recuay",
+        "02 Catac",
+        "03 Cotaparaco",
+        "04 Huayllapampa",
+        "05 Llacllin",
+        "06 Marca",
+        "07 Pampas Chico",
+        "08 Pararin",
+        "09 Tapacocha",
+        "10 Ticapampa"
+      ],
+      "18 Santa": [
+        "01 Chimbote",
+        "02 Cáceres del Perú",
+        "03 Coishco",
+        "04 Macate",
+        "05 Moro",
+        "06 Nepeña",
+        "07 Samanco",
+        "08 Santa",
+        "09 Nuevo Chimbote"
+      ],
+      "19 Sihuas": [
+        "01 Sihuas",
+        "02 Acobamba",
+        "03 Alfonso Ugarte",
+        "04 Cashapampa",
+        "05 Chingalpo",
+        "06 Huayllabamba",
+        "07 Quiches",
+        "08 Ragash",
+        "09 San Juan",
+        "10 Sicsibamba"
+      ],
+      "20 Yungay": [
+        "01 Yungay",
+        "02 Cascapara",
+        "03 Mancos",
+        "04 Matacoto",
+        "05 Quillo",
+        "06 Ranrahirca",
+        "07 Shupluy",
+        "08 Yanama"
+      ]
+    },
+    "Apurímac": {
+      "01 Abancay": [
+        "01 Abancay",
+        "02 Chacoche",
+        "03 Circa",
+        "04 Curahuasi",
+        "05 Huanipaca",
+        "06 Lambrama",
+        "07 Pichirhua",
+        "08 San Pedro de Cachora",
+        "09 Tamburco"
+      ],
+      "02 Andahuaylas": [
+        "01 Andahuaylas",
+        "02 Andarapa",
+        "03 Chiara",
+        "04 Huancarama",
+        "05 Huancaray",
+        "06 Huayana",
+        "07 Kishuara",
+        "08 Pacobamba",
+        "09 Pacucha",
+        "10 Pampachiri",
+        "11 Pomacocha",
+        "12 San Antonio de Cachi",
+        "13 San Jerónimo",
+        "14 San Miguel de Chaccrampa",
+        "15 Santa María de Chicmo",
+        "16 Talavera",
+        "17 Tumay Huaraca",
+        "18 Turpo",
+        "19 Kaquiabamba",
+        "20 José María Arguedas"
+      ],
+      "03 Antabamba": [
+        "01 Antabamba",
+        "02 El Oro",
+        "03 Huaquirca",
+        "04 Juan Espinoza Medrano",
+        "05 Oropesa",
+        "06 Pachaconas",
+        "07 Sabaino"
+      ],
+      "04 Aymaraes": [
+        "01 Chalhuanca",
+        "02 Capaya",
+        "03 Caraybamba",
+        "04 Chapimarca",
+        "05 Colcabamba",
+        "06 Cotaruse",
+        "07 Ihuayllo",
+        "08 Justo Apu Sahuaraura",
+        "09 Lucre",
+        "10 Pocohuanca",
+        "11 San Juan de Chacña",
+        "12 Sañayca",
+        "13 Soraya",
+        "14 Tapairihua",
+        "15 Tintay",
+        "16 Toraya",
+        "17 Yanaca"
+      ],
+      "05 Cotabambas": [
+        "01 Tambobamba",
+        "02 Cotabambas",
+        "03 Coyllurqui",
+        "04 Haquira",
+        "05 Mara",
+        "06 Challhuahuacho"
+      ],
+      "06 Chincheros": [
+        "01 Chincheros",
+        "02 Anco_Huallo",
+        "03 Cocharcas",
+        "04 Huaccana",
+        "05 Ocobamba",
+        "06 Ongoy",
+        "07 Uranmarca",
+        "08 Ranracancha",
+        "09 Rocchacc",
+        "10 El Porvenir"
+      ],
+      "07 Grau": [
+        "01 Chuquibambilla",
+        "02 Curpahuasi",
+        "03 Gamarra",
+        "04 Huayllati",
+        "05 Mamara",
+        "06 Micaela Bastidas",
+        "07 Pataypampa",
+        "08 Progreso",
+        "09 San Antonio",
+        "10 Santa Rosa",
+        "11 Turpay",
+        "12 Vilcabamba",
+        "13 Virundo",
+        "14 Curasco"
+      ]
+    },
+    "Arequipa": {
+      "01 Arequipa": [
+        "01 Arequipa",
+        "02 Alto Selva Alegre",
+        "03 Cayma",
+        "04 Cerro Colorado",
+        "05 Characato",
+        "06 Chiguata",
+        "07 Jacobo Hunter",
+        "08 La Joya",
+        "09 Mariano Melgar",
+        "10 Miraflores",
+        "11 Mollebaya",
+        "12 Paucarpata",
+        "13 Pocsi",
+        "14 Polobaya",
+        "15 Quequeña",
+        "16 Sabandia",
+        "17 Sachaca",
+        "18 San Juan de Siguas",
+        "19 San Juan de Tarucani",
+        "20 Santa Isabel de Siguas",
+        "21 Santa Rita de Siguas",
+        "22 Socabaya",
+        "23 Tiabaya",
+        "24 Uchumayo",
+        "25 Vitor",
+        "26 Yanahuara",
+        "27 Yarabamba",
+        "28 Yura",
+        "29 José Luis Bustamante Y Rivero"
+      ],
+      "02 Camaná": [
+        "01 Camaná",
+        "02 José María Quimper",
+        "03 Mariano Nicolás Valcárcel",
+        "04 Mariscal Cáceres",
+        "05 Nicolás de Pierola",
+        "06 Ocoña",
+        "07 Quilca",
+        "08 Samuel Pastor"
+      ],
+      "03 Caravelí": [
+        "01 Caravelí",
+        "02 Acarí",
+        "03 Atico",
+        "04 Atiquipa",
+        "05 Bella Unión",
+        "06 Cahuacho",
+        "07 Chala",
+        "08 Chaparra",
+        "09 Huanuhuanu",
+        "10 Jaqui",
+        "11 Lomas",
+        "12 Quicacha",
+        "13 Yauca"
+      ],
+      "04 Castilla": [
+        "01 Aplao",
+        "02 Andagua",
+        "03 Ayo",
+        "04 Chachas",
+        "05 Chilcaymarca",
+        "06 Choco",
+        "07 Huancarqui",
+        "08 Machaguay",
+        "09 Orcopampa",
+        "10 Pampacolca",
+        "11 Tipan",
+        "12 Uñon",
+        "13 Uraca",
+        "14 Viraco"
+      ],
+      "05 Caylloma": [
+        "01 Chivay",
+        "02 Achoma",
+        "03 Cabanaconde",
+        "04 Callalli",
+        "05 Caylloma",
+        "06 Coporaque",
+        "07 Huambo",
+        "08 Huanca",
+        "09 Ichupampa",
+        "10 Lari",
+        "11 Lluta",
+        "12 Maca",
+        "13 Madrigal",
+        "14 San Antonio de Chuca",
+        "15 Sibayo",
+        "16 Tapay",
+        "17 Tisco",
+        "18 Tuti",
+        "19 Yanque",
+        "20 Majes"
+      ],
+      "06 Condesuyos": [
+        "01 Chuquibamba",
+        "02 Andaray",
+        "03 Cayarani",
+        "04 Chichas",
+        "05 Iray",
+        "06 Río Grande",
+        "07 Salamanca",
+        "08 Yanaquihua"
+      ],
+      "07 Islay": [
+        "01 Mollendo",
+        "02 Cocachacra",
+        "03 Dean Valdivia",
+        "04 Islay",
+        "05 Mejia",
+        "06 Punta de Bombón"
+      ],
+      "08 La Uniòn": [
+        "01 Cotahuasi",
+        "02 Alca",
+        "03 Charcana",
+        "04 Huaynacotas",
+        "05 Pampamarca",
+        "06 Puyca",
+        "07 Quechualla",
+        "08 Sayla",
+        "09 Tauria",
+        "10 Tomepampa",
+        "11 Toro"
+      ]
+    },
+    "Ayacucho": {
+      "01 Huamanga": [
+        "01 Ayacucho",
+        "02 Acocro",
+        "03 Acos Vinchos",
+        "04 Carmen Alto",
+        "05 Chiara",
+        "06 Ocros",
+        "07 Pacaycasa",
+        "08 Quinua",
+        "09 San José de Ticllas",
+        "10 San Juan Bautista",
+        "11 Santiago de Pischa",
+        "12 Socos",
+        "13 Tambillo",
+        "14 Vinchos",
+        "15 Jesús Nazareno",
+        "16 Andrés Avelino Cáceres Dorregaray"
+      ],
+      "02 Cangallo": [
+        "01 Cangallo",
+        "02 Chuschi",
+        "03 Los Morochucos",
+        "04 María Parado de Bellido",
+        "05 Paras",
+        "06 Totos"
+      ],
+      "03 Huanca Sancos": [
+        "01 Sancos",
+        "02 Carapo",
+        "03 Sacsamarca",
+        "04 Santiago de Lucanamarca"
+      ],
+      "04 Huanta": [
+        "01 Huanta",
+        "02 Ayahuanco",
+        "03 Huamanguilla",
+        "04 Iguain",
+        "05 Luricocha",
+        "06 Santillana",
+        "07 Sivia",
+        "08 Llochegua",
+        "09 Canayre",
+        "10 Uchuraccay",
+        "11 Pucacolpa",
+        "12 Chaca"
+      ],
+      "05 La Mar": [
+        "01 San Miguel",
+        "02 Anco",
+        "03 Ayna",
+        "04 Chilcas",
+        "05 Chungui",
+        "06 Luis Carranza",
+        "07 Santa Rosa",
+        "08 Tambo",
+        "09 Samugari",
+        "10 Anchihuay"
+      ],
+      "06 Lucanas": [
+        "01 Puquio",
+        "02 Aucara",
+        "03 Cabana",
+        "04 Carmen Salcedo",
+        "05 Chaviña",
+        "06 Chipao",
+        "07 Huac-Huas",
+        "08 Laramate",
+        "09 Leoncio Prado",
+        "10 Llauta",
+        "11 Lucanas",
+        "12 Ocaña",
+        "13 Otoca",
+        "14 Saisa",
+        "15 San Cristóbal",
+        "16 San Juan",
+        "17 San Pedro",
+        "18 San Pedro de Palco",
+        "19 Sancos",
+        "20 Santa Ana de Huaycahuacho",
+        "21 Santa Lucia"
+      ],
+      "07 Parinacochas": [
+        "01 Coracora",
+        "02 Chumpi",
+        "03 Coronel Castañeda",
+        "04 Pacapausa",
+        "05 Pullo",
+        "06 Puyusca",
+        "07 San Francisco de Ravacayco",
+        "08 Upahuacho"
+      ],
+      "08 Pàucar del Sara Sara": [
+        "01 Pausa",
+        "02 Colta",
+        "03 Corculla",
+        "04 Lampa",
+        "05 Marcabamba",
+        "06 Oyolo",
+        "07 Pararca",
+        "08 San Javier de Alpabamba",
+        "09 San José de Ushua",
+        "10 Sara Sara"
+      ],
+      "09 Sucre": [
+        "01 Querobamba",
+        "02 Belén",
+        "03 Chalcos",
+        "04 Chilcayoc",
+        "05 Huacaña",
+        "06 Morcolla",
+        "07 Paico",
+        "08 San Pedro de Larcay",
+        "09 San Salvador de Quije",
+        "10 Santiago de Paucaray",
+        "11 Soras"
+      ],
+      "10 Víctor Fajardo": [
+        "01 Huancapi",
+        "02 Alcamenca",
+        "03 Apongo",
+        "04 Asquipata",
+        "05 Canaria",
+        "06 Cayara",
+        "07 Colca",
+        "08 Huamanquiquia",
+        "09 Huancaraylla",
+        "10 Huaya",
+        "11 Sarhua",
+        "12 Vilcanchos"
+      ],
+      "11 Vilcas Huamán": [
+        "01 Vilcas Huaman",
+        "02 Accomarca",
+        "03 Carhuanca",
+        "04 Concepción",
+        "05 Huambalpa",
+        "06 Independencia",
+        "07 Saurama",
+        "08 Vischongo"
+      ],
+      "12 La Convención": [
+        "09 Kimbiri",
+        "10 Pichari"
+      ],
+      "01 Satipo": [
+        "01 Pangoa"
+      ]
+    },
+    "Cajamarca": {
+      "01 Cajamarca": [
+        "01 Cajamarca",
+        "02 Asunción",
+        "03 Chetilla",
+        "04 Cospan",
+        "05 Encañada",
+        "06 Jesús",
+        "07 Llacanora",
+        "08 Los Baños del Inca",
+        "09 Magdalena",
+        "10 Matara",
+        "11 Namora",
+        "12 San Juan"
+      ],
+      "02 Cajabamba": [
+        "01 Cajabamba",
+        "02 Cachachi",
+        "03 Condebamba",
+        "04 Sitacocha"
+      ],
+      "03 Celendín": [
+        "01 Celendín",
+        "02 Chumuch",
+        "03 Cortegana",
+        "04 Huasmin",
+        "05 Jorge Chávez",
+        "06 José Gálvez",
+        "07 Miguel Iglesias",
+        "08 Oxamarca",
+        "09 Sorochuco",
+        "10 Sucre",
+        "11 Utco",
+        "12 La Libertad de Pallan"
+      ],
+      "04 Chota": [
+        "01 Chota",
+        "02 Anguia",
+        "03 Chadin",
+        "04 Chiguirip",
+        "05 Chimban",
+        "06 Choropampa",
+        "07 Cochabamba",
+        "08 Conchan",
+        "09 Huambos",
+        "10 Lajas",
+        "11 Llama",
+        "12 Miracosta",
+        "13 Paccha",
+        "14 Pion",
+        "15 Querocoto",
+        "16 San Juan de Licupis",
+        "17 Tacabamba",
+        "18 Tocmoche",
+        "19 Chalamarca"
+      ],
+      "05 Contumazá": [
+        "01 Contumaza",
+        "02 Chilete",
+        "03 Cupisnique",
+        "04 Guzmango",
+        "05 San Benito",
+        "06 Santa Cruz de Toledo",
+        "07 Tantarica",
+        "08 Yonan"
+      ],
+      "06 Cutervo": [
+        "01 Cutervo",
+        "02 Callayuc",
+        "03 Choros",
+        "04 Cujillo",
+        "05 La Ramada",
+        "06 Pimpingos",
+        "07 Querocotillo",
+        "08 San Andrés de Cutervo",
+        "09 San Juan de Cutervo",
+        "10 San Luis de Lucma",
+        "11 Santa Cruz",
+        "12 Santo Domingo de la Capilla",
+        "13 Santo Tomas",
+        "14 Socota",
+        "15 Toribio Casanova"
+      ],
+      "07 Hualgayoc": [
+        "01 Bambamarca",
+        "02 Chugur",
+        "03 Hualgayoc"
+      ],
+      "08 Jaén": [
+        "01 Jaén",
+        "02 Bellavista",
+        "03 Chontali",
+        "04 Colasay",
+        "05 Huabal",
+        "06 Las Pirias",
+        "07 Pomahuaca",
+        "08 Pucara",
+        "09 Sallique",
+        "10 San Felipe",
+        "11 San José del Alto",
+        "12 Santa Rosa"
+      ],
+      "09 San Ignacio": [
+        "01 San Ignacio",
+        "02 Chirinos",
+        "03 Huarango",
+        "04 La Coipa",
+        "05 Namballe",
+        "06 San José de Lourdes",
+        "07 Tabaconas"
+      ],
+      "10 San Marcos": [
+        "01 Pedro Gálvez",
+        "02 Chancay",
+        "03 Eduardo Villanueva",
+        "04 Gregorio Pita",
+        "05 Ichocan",
+        "06 José Manuel Quiroz",
+        "07 José Sabogal"
+      ],
+      "11 San Miguel": [
+        "01 San Miguel",
+        "02 Bolívar",
+        "03 Calquis",
+        "04 Catilluc",
+        "05 El Prado",
+        "06 La Florida",
+        "07 Llapa",
+        "08 Nanchoc",
+        "09 Niepos",
+        "10 San Gregorio",
+        "11 San Silvestre de Cochan",
+        "12 Tongod",
+        "13 Unión Agua Blanca"
+      ],
+      "12 San Pablo": [
+        "01 San Pablo",
+        "02 San Bernardino",
+        "03 San Luis",
+        "04 Tumbaden"
+      ],
+      "13 Santa Cruz": [
+        "01 Santa Cruz",
+        "02 Andabamba",
+        "03 Catache",
+        "04 Chancaybaños",
+        "05 La Esperanza",
+        "06 Ninabamba",
+        "07 Pulan",
+        "08 Saucepampa",
+        "09 Sexi",
+        "10 Uticyacu",
+        "11 Yauyucan"
+      ]
+    },
+    "Cusco": {
+      "01 Cusco": [
+        "01 Cusco",
+        "02 Ccorca",
+        "03 Poroy",
+        "04 San Jerónimo",
+        "05 San Sebastian",
+        "06 Santiago",
+        "07 Saylla",
+        "08 Wanchaq"
+      ],
+      "02 Acomayo": [
+        "01 Acomayo",
+        "02 Acopia",
+        "03 Acos",
+        "04 Mosoc Llacta",
+        "05 Pomacanchi",
+        "06 Rondocan",
+        "07 Sangarara"
+      ],
+      "03 Anta": [
+        "01 Anta",
+        "02 Ancahuasi",
+        "03 Cachimayo",
+        "04 Chinchaypujio",
+        "05 Huarocondo",
+        "06 Limatambo",
+        "07 Mollepata",
+        "08 Pucyura",
+        "09 Zurite"
+      ],
+      "04 Calca": [
+        "01 Calca",
+        "02 Coya",
+        "03 Lamay",
+        "04 Lares",
+        "05 Pisac",
+        "06 San Salvador",
+        "07 Taray",
+        "08 Yanatile"
+      ],
+      "05 Canas": [
+        "01 Yanaoca",
+        "02 Checca",
+        "03 Kunturkanki",
+        "04 Langui",
+        "05 Layo",
+        "06 Pampamarca",
+        "07 Quehue",
+        "08 Tupac Amaru"
+      ],
+      "06 Canchis": [
+        "01 Sicuani",
+        "02 Checacupe",
+        "03 Combapata",
+        "04 Marangani",
+        "05 Pitumarca",
+        "06 San Pablo",
+        "07 San Pedro",
+        "08 Tinta"
+      ],
+      "07 Chumbivilcas": [
+        "01 Santo Tomas",
+        "02 Capacmarca",
+        "03 Chamaca",
+        "04 Colquemarca",
+        "05 Livitaca",
+        "06 Llusco",
+        "07 Quiñota",
+        "08 Velille"
+      ],
+      "08 Espinar": [
+        "01 Espinar",
+        "02 Condoroma",
+        "03 Coporaque",
+        "04 Ocoruro",
+        "05 Pallpata",
+        "06 Pichigua",
+        "07 Suyckutambo",
+        "08 Alto Pichigua"
+      ],
+      "09 La Convención": [
+        "01 Santa Ana",
+        "02 Echarate",
+        "03 Huayopata",
+        "04 Maranura",
+        "05 Ocobamba",
+        "06 Quellouno",
+        "07 Santa Teresa",
+        "08 Vilcabamba",
+        "09 Inkawasi",
+        "10 Villa Virgen",
+        "11 Villa Kintiarina"
+      ],
+      "10 Paruro": [
+        "01 Paruro",
+        "02 Accha",
+        "03 Ccapi",
+        "04 Colcha",
+        "05 Huanoquite",
+        "06 Omacha",
+        "07 Paccaritambo",
+        "08 Pillpinto",
+        "09 Yaurisque"
+      ],
+      "11 Paucartambo": [
+        "01 Paucartambo",
+        "02 Caicay",
+        "03 Challabamba",
+        "04 Colquepata",
+        "05 Huancarani",
+        "06 Kosñipata"
+      ],
+      "12 Quispicanchi": [
+        "01 Urcos",
+        "02 Andahuaylillas",
+        "03 Camanti",
+        "04 Ccarhuayo",
+        "05 Ccatca",
+        "06 Cusipata",
+        "07 Huaro",
+        "08 Lucre",
+        "09 Marcapata",
+        "10 Ocongate",
+        "11 Oropesa",
+        "12 Quiquijana"
+      ],
+      "13 Urubamba": [
+        "01 Urubamba",
+        "02 Chinchero",
+        "03 Huayllabamba",
+        "04 Machupicchu",
+        "05 Maras",
+        "06 Ollantaytambo",
+        "07 Yucay"
+      ]
+    },
+    "Huancavelica": {
+      "01 Huancavelica": [
+        "01 Huancavelica",
+        "02 Acobambilla",
+        "03 Acoria",
+        "04 Conayca",
+        "05 Cuenca",
+        "06 Huachocolpa",
+        "07 Huayllahuara",
+        "08 Izcuchaca",
+        "09 Laria",
+        "10 Manta",
+        "11 Mariscal Cáceres",
+        "12 Moya",
+        "13 Nuevo Occoro",
+        "14 Palca",
+        "15 Pilchaca",
+        "16 Vilca",
+        "17 Yauli",
+        "18 Ascensión",
+        "19 Huando"
+      ],
+      "02 Acobamba": [
+        "01 Acobamba",
+        "02 Andabamba",
+        "03 Anta",
+        "04 Caja",
+        "05 Marcas",
+        "06 Paucara",
+        "07 Pomacocha",
+        "08 Rosario"
+      ],
+      "03 Angaraes": [
+        "01 Lircay",
+        "02 Anchonga",
+        "03 Callanmarca",
+        "04 Ccochaccasa",
+        "05 Chincho",
+        "06 Congalla",
+        "07 Huanca-Huanca",
+        "08 Huayllay Grande",
+        "09 Julcamarca",
+        "10 San Antonio de Antaparco",
+        "11 Santo Tomas de Pata",
+        "12 Secclla"
+      ],
+      "04 Castrovirreyna": [
+        "01 Castrovirreyna",
+        "02 Arma",
+        "03 Aurahua",
+        "04 Capillas",
+        "05 Chupamarca",
+        "06 Cocas",
+        "07 Huachos",
+        "08 Huamatambo",
+        "09 Mollepampa",
+        "10 San Juan",
+        "11 Santa Ana",
+        "12 Tantara",
+        "13 Ticrapo"
+      ],
+      "05 Churcampa": [
+        "01 Churcampa",
+        "02 Anco",
+        "03 Chinchihuasi",
+        "04 El Carmen",
+        "05 La Merced",
+        "06 Locroja",
+        "07 Paucarbamba",
+        "08 San Miguel de Mayocc",
+        "09 San Pedro de Coris",
+        "10 Pachamarca",
+        "11 Cosme"
+      ],
+      "06 Huaytará": [
+        "01 Huaytara",
+        "02 Ayavi",
+        "03 Córdova",
+        "04 Huayacundo Arma",
+        "05 Laramarca",
+        "06 Ocoyo",
+        "07 Pilpichaca",
+        "08 Querco",
+        "09 Quito-Arma",
+        "10 San Antonio de Cusicancha",
+        "11 San Francisco de Sangayaico",
+        "12 San Isidro",
+        "13 Santiago de Chocorvos",
+        "14 Santiago de Quirahuara",
+        "15 Santo Domingo de Capillas",
+        "16 Tambo"
+      ],
+      "07 Tayacaja": [
+        "01 Pampas",
+        "02 Acostambo",
+        "03 Acraquia",
+        "04 Ahuaycha",
+        "05 Colcabamba",
+        "06 Daniel Hernández",
+        "07 Huachocolpa",
+        "09 Huaribamba",
+        "10 Ñahuimpuquio",
+        "11 Pazos",
+        "13 Quishuar",
+        "14 Salcabamba",
+        "15 Salcahuasi",
+        "16 San Marcos de Rocchac",
+        "17 Surcubamba",
+        "18 Tintay Puncu",
+        "19 Quichuas",
+        "20 Andaymarca",
+        "21 Roble",
+        "22 Pichos"
+      ]
+    },
+    "Huánuco": {
+      "01 Huánuco": [
+        "01 Huánuco",
+        "02 Amarilis",
+        "03 Chinchao",
+        "04 Churubamba",
+        "05 Margos",
+        "06 Quisqui (Kichki)",
+        "07 San Francisco de Cayran",
+        "08 San Pedro de Chaulan",
+        "09 Santa María del Valle",
+        "10 Yarumayo",
+        "11 Pillco Marca",
+        "12 Yacus",
+        "13 San Pablo de Pillao"
+      ],
+      "02 Ambo": [
+        "01 Ambo",
+        "02 Cayna",
+        "03 Colpas",
+        "04 Conchamarca",
+        "05 Huacar",
+        "06 San Francisco",
+        "07 San Rafael",
+        "08 Tomay Kichwa"
+      ],
+      "03 Dos de Mayo": [
+        "01 La Unión",
+        "07 Chuquis",
+        "11 Marías",
+        "13 Pachas",
+        "16 Quivilla",
+        "17 Ripan",
+        "21 Shunqui",
+        "22 Sillapata",
+        "23 Yanas"
+      ],
+      "04 Huacaybamba": [
+        "01 Huacaybamba",
+        "02 Canchabamba",
+        "03 Cochabamba",
+        "04 Pinra"
+      ],
+      "05 Huamalíes": [
+        "01 Llata",
+        "02 Arancay",
+        "03 Chavín de Pariarca",
+        "04 Jacas Grande",
+        "05 Jircan",
+        "06 Miraflores",
+        "07 Monzón",
+        "08 Punchao",
+        "09 Puños",
+        "10 Singa",
+        "11 Tantamayo"
+      ],
+      "06 Leoncio Prado": [
+        "01 Rupa-Rupa",
+        "02 Daniel Alomía Robles",
+        "03 Hermílio Valdizan",
+        "04 José Crespo y Castillo",
+        "05 Luyando",
+        "06 Mariano Damaso Beraun",
+        "07 Pucayacu",
+        "08 Castillo Grande"
+      ],
+      "07 Marañón": [
+        "01 Huacrachuco",
+        "02 Cholon",
+        "03 San Buenaventura",
+        "04 La Morada",
+        "05 Santa Rosa de Alto Yanajanca"
+      ],
+      "08 Pachitea": [
+        "01 Panao",
+        "02 Chaglla",
+        "03 Molino",
+        "04 Umari"
+      ],
+      "09 Puerto Inca": [
+        "01 Puerto Inca",
+        "02 Codo del Pozuzo",
+        "03 Honoria",
+        "04 Tournavista",
+        "05 Yuyapichis"
+      ],
+      "10 Lauricocha ": [
+        "01 Jesús",
+        "02 Baños",
+        "03 Jivia",
+        "04 Queropalca",
+        "05 Rondos",
+        "06 San Francisco de Asís",
+        "07 San Miguel de Cauri"
+      ],
+      "11 Yarowilca ": [
+        "01 Chavinillo",
+        "02 Cahuac",
+        "03 Chacabamba",
+        "04 Aparicio Pomares",
+        "05 Jacas Chico",
+        "06 Obas",
+        "07 Pampamarca",
+        "08 Choras"
+      ]
+    },
+    "Ica": {
+      "01 Ica ": [
+        "01 Ica",
+        "02 La Tinguiña",
+        "03 Los Aquijes",
+        "04 Ocucaje",
+        "05 Pachacutec",
+        "06 Parcona",
+        "07 Pueblo Nuevo",
+        "08 Salas",
+        "09 San José de Los Molinos",
+        "10 San Juan Bautista",
+        "11 Santiago",
+        "12 Subtanjalla",
+        "13 Tate",
+        "14 Yauca del Rosario"
+      ],
+      "02 Chincha ": [
+        "01 Chincha Alta",
+        "02 Alto Laran",
+        "03 Chavin",
+        "04 Chincha Baja",
+        "05 El Carmen",
+        "06 Grocio Prado",
+        "07 Pueblo Nuevo",
+        "08 San Juan de Yanac",
+        "09 San Pedro de Huacarpana",
+        "10 Sunampe",
+        "11 Tambo de Mora"
+      ],
+      "03 Nasca ": [
+        "01 Nasca",
+        "02 Changuillo",
+        "03 El Ingenio",
+        "04 Marcona",
+        "05 Vista Alegre"
+      ],
+      "04 Palpa ": [
+        "01 Palpa",
+        "02 Llipata",
+        "03 Río Grande",
+        "04 Santa Cruz",
+        "05 Tibillo"
+      ],
+      "05 Pisco ": [
+        "01 Pisco",
+        "02 Huancano",
+        "03 Humay",
+        "04 Independencia",
+        "05 Paracas",
+        "06 San Andrés",
+        "07 San Clemente",
+        "08 Tupac Amaru Inca"
+      ]
+    },
+    "Junín": {
+      "01 Huancayo ": [
+        "01 Huancayo",
+        "04 Carhuacallanga",
+        "05 Chacapampa",
+        "06 Chicche",
+        "07 Chilca",
+        "08 Chongos Alto",
+        "11 Chupuro",
+        "12 Colca",
+        "13 Cullhuas",
+        "14 El Tambo",
+        "16 Huacrapuquio",
+        "17 Hualhuas",
+        "19 Huancan",
+        "20 Huasicancha",
+        "21 Huayucachi",
+        "22 Ingenio",
+        "24 Pariahuanca",
+        "25 Pilcomayo",
+        "26 Pucara",
+        "27 Quichuay",
+        "28 Quilcas",
+        "29 San Agustín",
+        "30 San Jerónimo de Tunan",
+        "32 Saño",
+        "33 Sapallanga",
+        "34 Sicaya",
+        "35 Santo Domingo de Acobamba",
+        "36 Viques"
+      ],
+      "02 Concepción ": [
+        "01 Concepción",
+        "02 Aco",
+        "03 Andamarca",
+        "04 Chambara",
+        "05 Cochas",
+        "06 Comas",
+        "07 Heroínas Toledo",
+        "08 Manzanares",
+        "09 Mariscal Castilla",
+        "10 Matahuasi",
+        "11 Mito",
+        "12 Nueve de Julio",
+        "13 Orcotuna",
+        "14 San José de Quero",
+        "15 Santa Rosa de Ocopa"
+      ],
+      "03 Chanchamayo ": [
+        "01 Chanchamayo",
+        "02 Perene",
+        "03 Pichanaqui",
+        "04 San Luis de Shuaro",
+        "05 San Ramón",
+        "06 Vitoc"
+      ],
+      "04 Jauja ": [
+        "01 Jauja",
+        "02 Acolla",
+        "03 Apata",
+        "04 Ataura",
+        "05 Canchayllo",
+        "06 Curicaca",
+        "07 El Mantaro",
+        "08 Huamali",
+        "09 Huaripampa",
+        "10 Huertas",
+        "11 Janjaillo",
+        "12 Julcán",
+        "13 Leonor Ordóñez",
+        "14 Llocllapampa",
+        "15 Marco",
+        "16 Masma",
+        "17 Masma Chicche",
+        "18 Molinos",
+        "19 Monobamba",
+        "20 Muqui",
+        "21 Muquiyauyo",
+        "22 Paca",
+        "23 Paccha",
+        "24 Pancan",
+        "25 Parco",
+        "26 Pomacancha",
+        "27 Ricran",
+        "28 San Lorenzo",
+        "29 San Pedro de Chunan",
+        "30 Sausa",
+        "31 Sincos",
+        "32 Tunan Marca",
+        "33 Yauli",
+        "34 Yauyos"
+      ],
+      "05 Junín ": [
+        "01 Junin",
+        "02 Carhuamayo",
+        "03 Ondores",
+        "04 Ulcumayo"
+      ],
+      "06 Satipo ": [
+        "01 Satipo",
+        "02 Coviriali",
+        "03 Llaylla",
+        "04 Mazamari",
+        "05 Pampa Hermosa",
+        "06 Pangoa",
+        "07 Río Negro",
+        "08 Río Tambo",
+        "09 Vizcatan del Ene"
+      ],
+      "07 Tarma ": [
+        "01 Tarma",
+        "02 Acobamba",
+        "03 Huaricolca",
+        "04 Huasahuasi",
+        "05 La Unión",
+        "06 Palca",
+        "07 Palcamayo",
+        "08 San Pedro de Cajas",
+        "09 Tapo"
+      ],
+      "08 Yauli ": [
+        "01 La Oroya",
+        "02 Chacapalpa",
+        "03 Huay-Huay",
+        "04 Marcapomacocha",
+        "05 Morococha",
+        "06 Paccha",
+        "07 Santa Bárbara de Carhuacayan",
+        "08 Santa Rosa de Sacco",
+        "09 Suitucancha",
+        "10 Yauli"
+      ],
+      "09 Chupaca ": [
+        "01 Chupaca",
+        "02 Ahuac",
+        "03 Chongos Bajo",
+        "04 Huachac",
+        "05 Huamancaca Chico",
+        "06 San Juan de Iscos",
+        "07 San Juan de Jarpa",
+        "08 Tres de Diciembre",
+        "09 Yanacancha"
+      ]
+    },
+    "La_Libertad": {
+      "01 Trujillo ": [
+        "01 Trujillo",
+        "02 El Porvenir",
+        "03 Florencia de Mora",
+        "04 Huanchaco",
+        "05 La Esperanza",
+        "06 Laredo",
+        "07 Moche",
+        "08 Poroto",
+        "09 Salaverry",
+        "10 Simbal",
+        "11 Victor Larco Herrera"
+      ],
+      "02 Ascope ": [
+        "01 Ascope",
+        "02 Chicama",
+        "03 Chocope",
+        "04 Magdalena de Cao",
+        "05 Paijan",
+        "06 Rázuri",
+        "07 Santiago de Cao",
+        "08 Casa Grande"
+      ],
+      "03 Bolívar ": [
+        "01 Bolívar",
+        "02 Bambamarca",
+        "03 Condormarca",
+        "04 Longotea",
+        "05 Uchumarca",
+        "06 Ucuncha"
+      ],
+      "04 Chepén ": [
+        "01 Chepen",
+        "02 Pacanga",
+        "03 Pueblo Nuevo"
+      ],
+      "05 Julcán ": [
+        "01 Julcan",
+        "02 Calamarca",
+        "03 Carabamba",
+        "04 Huaso"
+      ],
+      "06 Otuzco ": [
+        "01 Otuzco",
+        "02 Agallpampa",
+        "04 Charat",
+        "05 Huaranchal",
+        "06 La Cuesta",
+        "08 Mache",
+        "10 Paranday",
+        "11 Salpo",
+        "13 Sinsicap",
+        "14 Usquil"
+      ],
+      "07 Pacasmayo ": [
+        "01 San Pedro de Lloc",
+        "02 Guadalupe",
+        "03 Jequetepeque",
+        "04 Pacasmayo",
+        "05 San José"
+      ],
+      "08 Pataz ": [
+        "01 Tayabamba",
+        "02 Buldibuyo",
+        "03 Chillia",
+        "04 Huancaspata",
+        "05 Huaylillas",
+        "06 Huayo",
+        "07 Ongon",
+        "08 Parcoy",
+        "09 Pataz",
+        "10 Pias",
+        "11 Santiago de Challas",
+        "12 Taurija",
+        "13 Urpay"
+      ],
+      "09 Sánchez Carrión ": [
+        "01 Huamachuco",
+        "02 Chugay",
+        "03 Cochorco",
+        "04 Curgos",
+        "05 Marcabal",
+        "06 Sanagoran",
+        "07 Sarin",
+        "08 Sartimbamba"
+      ],
+      "10 Santiago de Chuco ": [
+        "01 Santiago de Chuco",
+        "02 Angasmarca",
+        "03 Cachicadan",
+        "04 Mollebamba",
+        "05 Mollepata",
+        "06 Quiruvilca",
+        "07 Santa Cruz de Chuca",
+        "08 Sitabamba"
+      ],
+      "11 Gran Chimú ": [
+        "01 Cascas",
+        "02 Lucma",
+        "03 Marmot",
+        "04 Sayapullo"
+      ],
+      "12 Virú ": [
+        "01 Viru",
+        "02 Chao",
+        "03 Guadalupito"
+      ]
+    },
+    "Lambayeque": {
+      "01 Chiclayo ": [
+        "01 Chiclayo",
+        "02 Chongoyape",
+        "03 Eten",
+        "04 Eten Puerto",
+        "05 José Leonardo Ortiz",
+        "06 La Victoria",
+        "07 Lagunas",
+        "08 Monsefu",
+        "09 Nueva Arica",
+        "10 Oyotun",
+        "11 Picsi",
+        "12 Pimentel",
+        "13 Reque",
+        "14 Santa Rosa",
+        "15 Saña",
+        "16 Cayalti",
+        "17 Patapo",
+        "18 Pomalca",
+        "19 Pucala",
+        "20 Tuman"
+      ],
+      "02 Ferreñafe ": [
+        "01 Ferreñafe",
+        "02 Cañaris",
+        "03 Incahuasi",
+        "04 Manuel Antonio Mesones Muro",
+        "05 Pitipo",
+        "06 Pueblo Nuevo"
+      ],
+      "03 Lambayeque ": [
+        "01 Lambayeque",
+        "02 Chochope",
+        "03 Illimo",
+        "04 Jayanca",
+        "05 Mochumi",
+        "06 Morrope",
+        "07 Motupe",
+        "08 Olmos",
+        "09 Pacora",
+        "10 Salas",
+        "11 San José",
+        "12 Tucume"
+      ],
+      "04 San Miguel (Cajamarca)": [
+        "01 La Florida",
+        "02 Niepos",
+        "03 Bolivar",
+        "04 Nanchoc"
+      ],
+      "05 Santa Cruz (Cajamarca)": [
+        "02 Catache",
+        "04 Santa Cruz"
+      ],
+      "06 Chota (Cajamarca)": [
+        "01 Llama",
+        "02 Miracosta",
+        "03 San Juan de Licupiz",
+        "04 Tocmoche",
+        "05 Chota",
+        "04 Chancaybaños",
+        "08 Huambos"
+      ],
+      "07 Cutervo (Cajamarca)": [
+        "01 Cutervo",
+        "02 Socota",
+        "03 San Luis de Lucma"
+      ],
+      "08 Hualgayoc (Cajamarca)": [
+        "10 Hualgayoc",
+        "11 Bambamarca"
+      ]
+    },
+    "Loreto": {
+      "01 Maynas ": [
+        "01 Iquitos",
+        "02 Alto Nanay",
+        "03 Fernando Lores",
+        "04 Indiana",
+        "05 Las Amazonas",
+        "06 Mazan",
+        "07 Napo",
+        "08 Punchana",
+        "10 Torres Causana",
+        "12 Belén",
+        "13 San Juan Bautista"
+      ],
+      "02 Alto Amazonas ": [
+        "01 Yurimaguas",
+        "02 Balsapuerto",
+        "05 Jeberos",
+        "06 Lagunas",
+        "10 Santa Cruz",
+        "11 Teniente Cesar López Rojas"
+      ],
+      "03 Loreto ": [
+        "01 Nauta",
+        "02 Parinari",
+        "03 Tigre",
+        "04 Trompeteros",
+        "05 Urarinas"
+      ],
+      "04 Mariscal Ramón Castilla ": [
+        "01 Ramón Castilla",
+        "02 Pebas",
+        "03 Yavari",
+        "04 San Pablo"
+      ],
+      "05 Requena ": [
+        "01 Requena",
+        "02 Alto Tapiche",
+        "03 Capelo",
+        "04 Emilio San Martín",
+        "05 Maquia",
+        "06 Puinahua",
+        "07 Saquena",
+        "08 Soplin",
+        "09 Tapiche",
+        "10 Jenaro Herrera",
+        "11 Yaquerana"
+      ],
+      "06 Ucayali ": [
+        "01 Contamana",
+        "02 Inahuaya",
+        "03 Padre Márquez",
+        "04 Pampa Hermosa",
+        "05 Sarayacu",
+        "06 Vargas Guerra"
+      ],
+      "07 Datem del Marañón ": [
+        "01 Barranca",
+        "02 Cahuapanas",
+        "03 Manseriche",
+        "04 Morona",
+        "05 Pastaza",
+        "06 Andoas"
+      ],
+      "08 Putumayo": [
+        "01 Putumayo",
+        "02 Rosa Panduro",
+        "03 Teniente Manuel Clavero",
+        "04 Yaguas"
+      ]
+    },
+    "Madre_de_Dios": {
+      "01 Tambopata ": [
+        "01 Tambopata",
+        "02 Inambari",
+        "03 Las Piedras",
+        "04 Laberinto"
+      ],
+      "02 Manu ": [
+        "01 Manu",
+        "02 Fitzcarrald",
+        "03 Madre de Dios",
+        "04 Huepetuhe"
+      ],
+      "03 Tahuamanu ": [
+        "01 Iñapari",
+        "02 Iberia",
+        "03 Tahuamanu"
+      ]
+    },
+    "Moquegua": {
+      "01 Mariscal Nieto ": [
+        "01 Moquegua",
+        "02 Carumas",
+        "03 Cuchumbaya",
+        "04 Samegua",
+        "05 San Cristóbal",
+        "06 Torata"
+      ],
+      "02 General Sánchez Cerro ": [
+        "01 Omate",
+        "02 Chojata",
+        "03 Coalaque",
+        "04 Ichuña",
+        "05 La Capilla",
+        "06 Lloque",
+        "07 Matalaque",
+        "08 Puquina",
+        "09 Quinistaquillas",
+        "10 Ubinas",
+        "11 Yunga"
+      ],
+      "03 Ilo ": [
+        "01 Ilo",
+        "02 El Algarrobal",
+        "03 Pacocha"
+      ]
+    },
+    "Pasco": {
+      "01 Pasco ": [
+        "01 Chaupimarca",
+        "02 Huachon",
+        "03 Huariaca",
+        "04 Huayllay",
+        "05 Ninacaca",
+        "06 Pallanchacra",
+        "07 Paucartambo",
+        "08 San Francisco de Asís de Yarusyacan",
+        "09 Simon Bolívar",
+        "10 Ticlacayan",
+        "11 Tinyahuarco",
+        "12 Vicco",
+        "13 Yanacancha"
+      ],
+      "02 Daniel Alcides Carrión ": [
+        "01 Yanahuanca",
+        "02 Chacayan",
+        "03 Goyllarisquizga",
+        "04 Paucar",
+        "05 San Pedro de Pillao",
+        "06 Santa Ana de Tusi",
+        "07 Tapuc",
+        "08 Vilcabamba"
+      ],
+      "03 Oxapampa ": [
+        "01 Oxapampa",
+        "02 Chontabamba",
+        "03 Huancabamba",
+        "04 Palcazu",
+        "05 Pozuzo",
+        "06 Puerto Bermúdez",
+        "07 Villa Rica",
+        "08 Constitución"
+      ]
+    },
+    "Piura": {
+      "01 Piura ": [
+        "01 Piura",
+        "04 Castilla",
+        "05 Catacaos",
+        "07 Cura Mori",
+        "08 El Tallan",
+        "09 La Arena",
+        "10 La Unión",
+        "11 Las Lomas",
+        "14 Tambo Grande",
+        "15 Veintiseis de Octubre"
+      ],
+      "02 Ayabaca ": [
+        "01 Ayabaca",
+        "02 Frias",
+        "03 Jilili",
+        "04 Lagunas",
+        "05 Montero",
+        "06 Pacaipampa",
+        "07 Paimas",
+        "08 Sapillica",
+        "09 Sicchez",
+        "10 Suyo"
+      ],
+      "03 Huancabamba ": [
+        "01 Huancabamba",
+        "02 Canchaque",
+        "03 El Carmen de la Frontera",
+        "04 Huarmaca",
+        "05 Lalaquiz",
+        "06 San Miguel de El Faique",
+        "07 Sondor",
+        "08 Sondorillo"
+      ],
+      "04 Morropón ": [
+        "01 Chulucanas",
+        "02 Buenos Aires",
+        "03 Chalaco",
+        "04 La Matanza",
+        "05 Morropon",
+        "06 Salitral",
+        "07 San Juan de Bigote",
+        "08 Santa Catalina de Mossa",
+        "09 Santo Domingo",
+        "10 Yamango"
+      ],
+      "05 Paita ": [
+        "01 Paita",
+        "02 Amotape",
+        "03 Arenal",
+        "04 Colan",
+        "05 La Huaca",
+        "06 Tamarindo",
+        "07 Vichayal"
+      ],
+      "06 Sullana ": [
+        "01 Sullana",
+        "02 Bellavista",
+        "03 Ignacio Escudero",
+        "04 Lancones",
+        "05 Marcavelica",
+        "06 Miguel Checa",
+        "07 Querecotillo",
+        "08 Salitral"
+      ],
+      "07 Talara ": [
+        "01 Pariñas",
+        "02 El Alto",
+        "03 La Brea",
+        "04 Lobitos",
+        "05 Los Organos",
+        "06 Mancora"
+      ],
+      "08 Sechura ": [
+        "01 Sechura",
+        "02 Bellavista de la Unión",
+        "03 Bernal",
+        "04 Cristo Nos Valga",
+        "05 Vice",
+        "06 Rinconada Llicuar"
+      ]
+    },
+    "Puno": {
+      "01 Puno ": [
+        "01 Puno",
+        "02 Acora",
+        "03 Amantani",
+        "04 Atuncolla",
+        "05 Capachica",
+        "06 Chucuito",
+        "07 Coata",
+        "08 Huata",
+        "09 Mañazo",
+        "10 Paucarcolla",
+        "11 Pichacani",
+        "12 Plateria",
+        "13 San Antonio",
+        "14 Tiquillaca",
+        "15 Vilque"
+      ],
+      "02 Azángaro ": [
+        "01 Azángaro",
+        "02 Achaya",
+        "03 Arapa",
+        "04 Asillo",
+        "05 Caminaca",
+        "06 Chupa",
+        "07 José Domingo Choquehuanca",
+        "08 Muñani",
+        "09 Potoni",
+        "10 Saman",
+        "11 San Anton",
+        "12 San José",
+        "13 San Juan de Salinas",
+        "14 Santiago de Pupuja",
+        "15 Tirapata"
+      ],
+      "03 Carabaya ": [
+        "01 Macusani",
+        "02 Ajoyani",
+        "03 Ayapata",
+        "04 Coasa",
+        "05 Corani",
+        "06 Crucero",
+        "07 Ituata",
+        "08 Ollachea",
+        "09 San Gaban",
+        "10 Usicayos"
+      ],
+      "04 Chucuito ": [
+        "01 Juli",
+        "02 Desaguadero",
+        "03 Huacullani",
+        "04 Kelluyo",
+        "05 Pisacoma",
+        "06 Pomata",
+        "07 Zepita"
+      ],
+      "05 El Collao ": [
+        "01 Ilave",
+        "02 Capazo",
+        "03 Pilcuyo",
+        "04 Santa Rosa",
+        "05 Conduriri"
+      ],
+      "06 Huancané ": [
+        "01 Huancane",
+        "02 Cojata",
+        "03 Huatasani",
+        "04 Inchupalla",
+        "05 Pusi",
+        "06 Rosaspata",
+        "07 Taraco",
+        "08 Vilque Chico"
+      ],
+      "07 Lampa ": [
+        "01 Lampa",
+        "02 Cabanilla",
+        "03 Calapuja",
+        "04 Nicasio",
+        "05 Ocuviri",
+        "06 Palca",
+        "07 Paratia",
+        "08 Pucara",
+        "09 Santa Lucia",
+        "10 Vilavila"
+      ],
+      "08 Melgar ": [
+        "01 Ayaviri",
+        "02 Antauta",
+        "03 Cupi",
+        "04 Llalli",
+        "05 Macari",
+        "06 Nuñoa",
+        "07 Orurillo",
+        "08 Santa Rosa",
+        "09 Umachiri"
+      ],
+      "09 Moho ": [
+        "01 Moho",
+        "02 Conima",
+        "03 Huayrapata",
+        "04 Tilali"
+      ],
+      "10 San Antonio de Putina ": [
+        "01 Putina",
+        "02 Ananea",
+        "03 Pedro Vilca Apaza",
+        "04 Quilcapuncu",
+        "05 Sina"
+      ],
+      "11 San Román ": [
+        "01 Juliaca",
+        "02 Cabana",
+        "03 Cabanillas",
+        "04 Caracoto"
+      ],
+      "12 Sandia ": [
+        "01 Sandia",
+        "02 Cuyocuyo",
+        "03 Limbani",
+        "04 Patambuco",
+        "05 Phara",
+        "06 Quiaca",
+        "07 San Juan del Oro",
+        "08 Yanahuaya",
+        "09 Alto Inambari",
+        "10 San Pedro de Putina Punco"
+      ],
+      "13 Yunguyo ": [
+        "01 Yunguyo",
+        "02 Anapia",
+        "03 Copani",
+        "04 Cuturapi",
+        "05 Ollaraya",
+        "06 Tinicachi",
+        "07 Unicachi"
+      ]
+    },
+    "San_Martín": {
+      "01 Moyobamba ": [
+        "01 Moyobamba",
+        "02 Calzada",
+        "03 Habana",
+        "04 Jepelacio",
+        "05 Soritor",
+        "06 Yantalo"
+      ],
+      "02 Bellavista ": [
+        "01 Bellavista",
+        "02 Alto Biavo",
+        "03 Bajo Biavo",
+        "04 Huallaga",
+        "05 San Pablo",
+        "06 San Rafael"
+      ],
+      "03 El Dorado ": [
+        "01 San José de Sisa",
+        "02 Agua Blanca",
+        "03 San Martín",
+        "04 Santa Rosa",
+        "05 Shatoja"
+      ],
+      "04 Huallaga ": [
+        "01 Saposoa",
+        "02 Alto Saposoa",
+        "03 El Eslabón",
+        "04 Piscoyacu",
+        "05 Sacanche",
+        "06 Tingo de Saposoa"
+      ],
+      "05 Lamas ": [
+        "01 Lamas",
+        "02 Alonso de Alvarado",
+        "03 Barranquita",
+        "04 Caynarachi",
+        "05 Cuñumbuqui",
+        "06 Pinto Recodo",
+        "07 Rumisapa",
+        "08 San Roque de Cumbaza",
+        "09 Shanao",
+        "10 Tabalosos",
+        "11 Zapatero"
+      ],
+      "06 Mariscal Cáceres ": [
+        "01 Juanjuí",
+        "02 Campanilla",
+        "03 Huicungo",
+        "04 Pachiza",
+        "05 Pajarillo"
+      ],
+      "07 Picota ": [
+        "01 Picota",
+        "02 Buenos Aires",
+        "03 Caspisapa",
+        "04 Pilluana",
+        "05 Pucacaca",
+        "06 San Cristóbal",
+        "07 San Hilarión",
+        "08 Shamboyacu",
+        "09 Tingo de Ponasa",
+        "10 Tres Unidos"
+      ],
+      "08 Rioja ": [
+        "01 Rioja",
+        "02 Awajun",
+        "03 Elías Soplin Vargas",
+        "04 Nueva Cajamarca",
+        "05 Pardo Miguel",
+        "06 Posic",
+        "07 San Fernando",
+        "08 Yorongos",
+        "09 Yuracyacu"
+      ],
+      "09 San Martín ": [
+        "01 Tarapoto",
+        "02 Alberto Leveau",
+        "03 Cacatachi",
+        "04 Chazuta",
+        "05 Chipurana",
+        "06 El Porvenir",
+        "07 Huimbayoc",
+        "08 Juan Guerra",
+        "09 La Banda de Shilcayo",
+        "10 Morales",
+        "11 Papaplaya",
+        "12 San Antonio",
+        "13 Sauce",
+        "14 Shapaja"
+      ],
+      "10 Tocache ": [
+        "01 Tocache",
+        "02 Nuevo Progreso",
+        "03 Polvora",
+        "04 Shunte",
+        "05 Uchiza"
+      ]
+    },
+    "Tacna": {
+      "01 Tacna ": [
+        "01 Tacna",
+        "02 Alto de la Alianza",
+        "03 Calana",
+        "04 Ciudad Nueva",
+        "05 Inclan",
+        "06 Pachia",
+        "07 Palca",
+        "08 Pocollay",
+        "09 Sama",
+        "10 Coronel Gregorio Albarracín Lanchipa",
+        "11 La Yarada los Palos"
+      ],
+      "02 Candarave ": [
+        "01 Candarave",
+        "02 Cairani",
+        "03 Camilaca",
+        "04 Curibaya",
+        "05 Huanuara",
+        "06 Quilahuani"
+      ],
+      "03 Jorge Basadre ": [
+        "01 Locumba",
+        "02 Ilabaya",
+        "03 Ite"
+      ],
+      "04 Tarata ": [
+        "01 Tarata",
+        "02 Héroes Albarracín",
+        "03 Estique",
+        "04 Estique-Pampa",
+        "05 Sitajara",
+        "06 Susapaya",
+        "07 Tarucachi",
+        "08 Ticaco"
+      ]
+    },
+    "Tumbes": {
+      "01 Tumbes ": [
+        "01 Tumbes",
+        "02 Corrales",
+        "03 La Cruz",
+        "04 Pampas de Hospital",
+        "05 San Jacinto",
+        "06 San Juan de la Virgen"
+      ],
+      "02 Contralmirante Villar ": [
+        "01 Zorritos",
+        "02 Casitas",
+        "03 Canoas de Punta Sal"
+      ],
+      "03 Zarumilla ": [
+        "01 Zarumilla",
+        "02 Aguas Verdes",
+        "03 Matapalo",
+        "04 Papayal"
+      ]
+    },
+    "Ucayali": {
+      "01 Coronel Portillo ": [
+        "01 Calleria",
+        "02 Campoverde",
+        "03 Iparia",
+        "04 Masisea",
+        "05 Yarinacocha",
+        "06 Nueva Requena",
+        "07 Manantay"
+      ],
+      "02 Atalaya ": [
+        "01 Raymondi",
+        "02 Sepahua",
+        "03 Tahuania",
+        "04 Yurua"
+      ],
+      "03 Padre Abad ": [
+        "01 Padre Abad",
+        "02 Irazola",
+        "03 Curimana",
+        "04 Neshuya",
+        "05 Alexander Von Humboldt"
+      ],
+      "04 Purús": [
+        "01 Purus"
+      ]
+    },
+    "Lima_Norte": {
+      "01 Prov. Const. del Callao": [
+        "01 Callao",
+        "02 Bellavista",
+        "03 Carmen de la Legua Reynoso",
+        "04 La Perla",
+        "05 La Punta",
+        "06 Ventanilla",
+        "07 Mi Perú"
+      ],
+      "02 Barranca ": [
+        "01 Barranca",
+        "02 Paramonga",
+        "03 Pativilca",
+        "04 Supe",
+        "05 Supe Puerto"
+      ],
+      "04 Canta ": [
+        "01 Canta",
+        "02 Arahuay",
+        "03 Huamantanga",
+        "04 Huaros",
+        "05 Lachaqui",
+        "06 San Buenaventura",
+        "07 Santa Rosa de Quives"
+      ],
+      "06 Huaral ": [
+        "01 Huaral",
+        "02 Atavillos Alto",
+        "03 Atavillos Bajo",
+        "04 Aucallama",
+        "05 Chancay",
+        "06 Ihuari",
+        "07 Lampian",
+        "08 Pacaraos",
+        "09 San Miguel de Acos",
+        "10 Santa Cruz de Andamarca",
+        "11 Sumbilca",
+        "12 Veintisiete de Noviembre"
+      ],
+      "08 Huaura ": [
+        "01 Huacho",
+        "02 Ambar",
+        "03 Caleta de Carquin",
+        "04 Checras",
+        "05 Hualmay",
+        "06 Huaura",
+        "07 Leoncio Prado",
+        "08 Paccho",
+        "09 Santa Leonor",
+        "10 Santa María",
+        "11 Sayan",
+        "12 Vegueta"
+      ],
+      "09 Oyón ": [
+        "01 Oyon",
+        "02 Andajes",
+        "03 Caujul",
+        "04 Cochamarca",
+        "05 Navan",
+        "06 Pachangara"
+      ],
+      "01 Lima ": [
+        "01 Lima",
+        "02 Ancón",
+        "03 Ate",
+        "04 Barranco",
+        "05 Breña",
+        "06 Carabayllo",
+        "07 Chaclacayo",
+        "08 Chorrillos",
+        "09 Cieneguilla",
+        "10 Comas",
+        "11 El Agustino",
+        "12 Independencia",
+        "13 Jesús María",
+        "14 La Molina",
+        "15 La Victoria",
+        "16 Lince",
+        "17 Los Olivos",
+        "18 Lurigancho",
+        "19 Lurin",
+        "20 Magdalena del Mar",
+        "21 Pueblo Libre",
+        "22 Miraflores",
+        "23 Pachacamac",
+        "24 Pucusana",
+        "25 Puente Piedra",
+        "26 Punta Hermosa",
+        "27 Punta Negra",
+        "28 Rímac",
+        "29 San Bartolo",
+        "30 San Borja",
+        "31 San Isidro",
+        "32 San Juan de Lurigancho",
+        "33 San Juan de Miraflores",
+        "34 San Luis",
+        "35 San Martín de Porres",
+        "36 San Miguel",
+        "37 Santa Anita",
+        "38 Santa María del Mar",
+        "39 Santa Rosa",
+        "40 Santiago de Surco",
+        "41 Surquillo",
+        "42 Villa El Salvador",
+        "43 Villa María del Triunfo"
+      ],
+      "03 Cajatambo ": [
+        "01 Cajatambo",
+        "02 Copa",
+        "03 Gorgor",
+        "04 Huancapon",
+        "05 Manas"
+      ],
+      "04 Ancash": [
+        "01 Santa"
+      ],
+      "05 Chiclayo": [
+        "01 Chiclayo"
+      ],
+      "06 Santa": [
+        "01 Chimbote"
+      ]
+    },
+    "Lima_Sur": {
+      "01 Cañete ": [
+        "01 San Vicente de Cañete",
+        "02 Asia",
+        "03 Calango",
+        "04 Cerro Azul",
+        "05 Chilca",
+        "06 Coayllo",
+        "07 Imperial",
+        "08 Lunahuana",
+        "09 Mala",
+        "10 Nuevo Imperial",
+        "11 Pacaran",
+        "12 Quilmana",
+        "13 San Antonio",
+        "14 San Luis",
+        "15 Santa Cruz de Flores",
+        "16 Zúñiga"
+      ],
+      "02 Huarochirí ": [
+        "01 Matucana",
+        "02 Antioquia",
+        "03 Callahuanca",
+        "04 Carampoma",
+        "05 Chicla",
+        "06 Cuenca",
+        "07 Huachupampa",
+        "08 Huanza",
+        "09 Huarochiri",
+        "10 Lahuaytambo",
+        "11 Langa",
+        "12 Laraos",
+        "13 Mariatana",
+        "14 Ricardo Palma",
+        "15 San Andrés de Tupicocha",
+        "16 San Antonio",
+        "17 San Bartolomé",
+        "18 San Damian",
+        "19 San Juan de Iris",
+        "20 San Juan de Tantaranche",
+        "21 San Lorenzo de Quinti",
+        "22 San Mateo",
+        "23 San Mateo de Otao",
+        "24 San Pedro de Casta",
+        "25 San Pedro de Huancayre",
+        "26 Sangallaya",
+        "27 Santa Cruz de Cocachacra",
+        "28 Santa Eulalia",
+        "29 Santiago de Anchucaya",
+        "30 Santiago de Tuna",
+        "31 Santo Domingo de Los Olleros",
+        "32 Surco"
+      ],
+      "03 Yauyos ": [
+        "01 Yauyos",
+        "02 Alis",
+        "03 Allauca",
+        "04 Ayaviri",
+        "05 Azángaro",
+        "06 Cacra",
+        "07 Carania",
+        "08 Catahuasi",
+        "09 Chocos",
+        "10 Cochas",
+        "11 Colonia",
+        "12 Hongos",
+        "13 Huampara",
+        "14 Huancaya",
+        "15 Huangascar",
+        "16 Huantan",
+        "17 Huañec",
+        "18 Laraos",
+        "19 Lincha",
+        "20 Madean",
+        "21 Miraflores",
+        "22 Omas",
+        "23 Putinza",
+        "24 Quinches",
+        "25 Quinocay",
+        "26 San Joaquín",
+        "27 San Pedro de Pilas",
+        "28 Tanta",
+        "29 Tauripampa",
+        "30 Tomas",
+        "31 Tupe",
+        "32 Viñac",
+        "33 Vitis"
+      ],
+      "01 Lima ": [
+        "01 Lima",
+        "02 Ancón",
+        "03 Ate",
+        "04 Barranco",
+        "05 Breña",
+        "06 Carabayllo",
+        "07 Chaclacayo",
+        "08 Chorrillos",
+        "09 Cieneguilla",
+        "10 Comas",
+        "11 El Agustino",
+        "12 Independencia",
+        "13 Jesús María",
+        "14 La Molina",
+        "15 La Victoria",
+        "16 Lince",
+        "17 Los Olivos",
+        "18 Lurigancho",
+        "19 Lurin",
+        "20 Magdalena del Mar",
+        "21 Pueblo Libre",
+        "22 Miraflores",
+        "23 Pachacamac",
+        "24 Pucusana",
+        "25 Puente Piedra",
+        "26 Punta Hermosa",
+        "27 Punta Negra",
+        "28 Rímac",
+        "29 San Bartolo",
+        "30 San Borja",
+        "31 San Isidro",
+        "32 San Juan de Lurigancho",
+        "33 San Juan de Miraflores",
+        "34 San Luis",
+        "35 San Martín de Porres",
+        "36 San Miguel",
+        "37 Santa Anita",
+        "38 Santa María del Mar",
+        "39 Santa Rosa",
+        "40 Santiago de Surco",
+        "41 Surquillo",
+        "42 Villa El Salvador",
+        "43 Villa María del Triunfo"
+      ]
+    }
+  },
+  "empresas": {
+    "Amazonas": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400037-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400203-EVZO ASOCIADOS S.A.C.",
+      "SUP2400153-JESUS HUMBERTO CACERES LIVORA",
+      "SUP2400207-GEORGES JUD´AMEITH PRECIADO ARROYO"
+    ],
+    "Áncash": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400014-ALTEISA ENERGY SAC Y ALFREDO SERGIO TELLO IPARRAGUIRRE",
+      "SUP2400065-CONSORCIO EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L. - LUIS ENRIQUE SANCEHZ CARRION",
+      "SUP2400146-CONSORCIO GRUPO SERMINCO S.A.C. - LUIS ENRIQUE SÁNCHEZ CARRIÓN",
+      "SUP2400193-FULL OIL GAS SERVICE S.A.C.",
+      "SUP2300205-LAZARTE PANOCCA ALFREDO JHUNIOR"
+    ],
+    "Apurímac": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400019-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400129-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400145-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L."
+    ],
+    "Arequipa": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400035-CONSORCIO ENERGY AA PROYECTOS S.A.C. - CONSULTORIA Y SERVICIOS INGENIEROS Y ABOGADOS S.A.C.",
+      "SUP2400130-GRUPO SERMINCO S.A.C.",
+      "SUP2400199-CONSORCIO KALEV C7 PROYECTOS S.A.C. - CONSULTORIAS Y SERVICIOS INGENIEROS Y ABOGADOS S.A.C.",
+      "SUP2400204-GRUPO SERMINCO S.A.C.",
+      "SUP2400088-ANDERS DICKSON LOPEZ FLORES"
+    ],
+    "Ayacucho": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400043-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L. ",
+      "SUP2300215-CONSORCIO GRUPO SERMINCO S.A.C. & GAS OIL",
+      "SUP2400057-CONSORCIO EVZO ASOCIADOS S.A.C. - GIZED CONSULTORES S.A.C.",
+      "SUP2400157-CONSORCIO EVZO ASOCIADOS S.A.C. - GIZED CONSULTORES S.A.C."
+    ],
+    "Cajamarca": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400033-ELECTRO NOR PERU S.A.C.",
+      "SUP2400146-CONSORCIO GRUPO SERMINCO S.A.C. - LUIS ENRIQUE SÁNCHEZ CARRIÓN",
+      "SUP2400099-LESLIE MILAGROS BRAVO GUERRERO"
+    ],
+    "Cusco": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400011-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400019-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400032-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400145-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400201-SERVICIOS DE GESTION EMPRESARIAL SERGEM E.I.R.L.",
+      "SUP2400121-CESAR AUGUSTO VELARDE CARITA"
+    ],
+    "Huancavelica": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400208-TERRAMAR INSPECTION & TRADING S.A.C. ",
+      "SUP2300218-CONSORCIO ENERGY AA PROYECTOS´ S.A.C. & KALEV C7 PROYECTOS S.A.C."
+    ],
+    "Huánuco": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400176-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400158-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400198-KALEV C7 PROYECTOS S.A.C."
+    ],
+    "Ica": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400004-CONSORCIO SUPERVISION CONSULTORIA Y SERVICIOS EN ENERGIA S.A.C.S. - MORENO &PEREZ ABOGADOS Y CONTADORES S. CIVIL DE R.L.",
+      "SUP2400040-CONSORCIO EVZO ASOCIADOS S.A.C. - GIZED CONSULTORES S.A.C.",
+      "SUP2400149-COLLANTE CHUMPITAZ FRANCO EDUARDO "
+    ],
+    "Junín": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400208-TERRAMAR INSPECTION & TRADING S.A.C. ",
+      "SUP2300216-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400138-TERRAMAR INSPECTION & TRADING S.A.C.",
+      "SUP2400197-GRUPO SERMINCO S.A.C."
+    ],
+    "La Libertad": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400067-CONSORCIO EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L. - LUIS ENRIQUE SANCEHZ CARRION",
+      "SUP2400135-CONSORCIO EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L. - LUIS ENRIQUE SANCEHZ CARRION",
+      "SUP2400146-CONSORCIO GRUPO SERMINCO S.A.C. - LUIS ENRIQUE SÁNCHEZ CARRIÓN",
+      "SUP2400192-CONSORCIO EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L. - LUIS ENRIQUE SANCEHZ CARRION",
+      "SUP2400109-WILMER ALONSO HERRERA HURTADO"
+    ],
+    "Lambayeque": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400051-CONSORCIO EVZO ASOCIADOS S.A.C. - GIZED CONSULTORES S.A.C. & PEREZ ABOGADOS Y CONTADORES S. CIVIL. DE R.L.",
+      "SUP2400159-CONSORCIO ELECTRO NOR PERÚ S.A.C. - ABEL FRANKLIN TAVARA CIEZA",
+      "SUP2400203-EVZO ASOCIADOS S.A.C.",
+      "SUP2400083-CESAR AUGUSTO FARFAN MENDOZA"
+    ],
+    "Lima Norte": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400013-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400165-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400211-TERRAMAR INSPECTION & TRADING S.A.C.",
+      "SUP2400030-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400160-CONSORCIO EVALUACIÓN Y SUPERVISIÓN EN ENERGÍA Y MINERÍA E.I.R.L. - LUIS ENRIQUE SÁNCHEZ CARRIÓN",
+      "SUP2400152-LESLY MARGARITA RIVEROS TICONA"
+    ],
+    "Lima Sur": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400164-EVALUACION Y SUPERVISION EN ENERGIA",
+      "SUP2400003-CONSORCIO GAS OIL INSPECTION S.A.C. - ENERGY AA PROYECTOS S.A.C.",
+      "SUP2400040-CONSORCIO EVZO ASOCIADOS S.A.C. - GIZED CONSULTORES S.A.C.",
+      "SUP2400195-CONSORCIO MRS ENERGÍA Y MINERÍA E.I.R.L. - EVALUACIÓN Y SUPERVISIÓN EN ENERGÍA E.I.R.L.",
+      "SUP2400096-JACKELINE NICOLL AMAO"
+    ],
+    "Loreto": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400039-SUPERVISION CONSULTORIA Y SERVICIOS EN ENERGIA S.A.C.",
+      "SUP2400161-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400191-MRS ENERGÍA Y MINERÍA E.I.R.L.",
+      "SUP2400203-EVZO ASOCIADOS S.A.C.",
+      "SUP2400071-JOSE MANUEL GONZALES RAMIREZ"
+    ],
+    "Madre de Dios": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400011-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400019-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2300222-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400175-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400184-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400032-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400145-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L."
+    ],
+    "Moquegua": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400034-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400162-MRS ENERGÍA Y MINERÍA E.I.R.L.",
+      "SUP2400204-GRUPO SERMINCO S.A.C.",
+      "SUP2400114-SERGIO ALDAZABAL ORTIZ"
+    ],
+    "Pasco": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400176-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400208-TERRAMAR INSPECTION & TRADING S.A.C. ",
+      "SUP2300219-CONSORCIO GRUPO SERMINCO S.A.C. & GAS OIL",
+      "SUP2400138-TERRAMAR INSPECTION & TRADING S.A.C."
+    ],
+    "Piura": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400044-CONSORCIO GRUPO SERMINCO S.A.C. - MORENO Y PEREZ ABOGADOS Y CONTADORES S. CIVIL DE R.L.",
+      "SUP2400168-FULL OIL GAS SERVICE S.A.C.",
+      "SUP2400203-EVZO ASOCIADOS S.A.C."
+    ],
+    "Puno": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400011-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400019-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2400102-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400009-CONSORCIO GRUPO SERMINCO S.A.C., GAS OIL INSPECTION S.A.C. Y MRS ENERGIA Y MINERIA E.I.R.L.",
+      "SUP2400032-COMPAÑÍA DE INGENIERIA Y CONSTRUCCIÓN ESPECIALIZADA S.R.L.",
+      "SUP2400145-COMPAÑIA DE INGENIERIA Y CONSTRUCCION ESPECIALIZADA S.R.L.",
+      "SUP2300207-MULLISACA MAMANI FLOR DE MARIA",
+      "SUP2400137-FABRICIO ALEXANDER PEÑA ZARATE",
+      "SUP2400136-JESUS RAFAEL TURPO CARRILLO"
+    ],
+    "San Martin": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400037-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400131-GRUPO SERMINCO S.A.C.",
+      "SUP2400203-EVZO ASOCIADOS S.A.C.",
+      "SUP2400106-KEVIN GIAMPOL SANCHEZ CRISANTO"
+    ],
+    "Tacna": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400034-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400163-MRS ENERGÍA Y MINERÍA E.I.R.L.",
+      "SUP2400200-KALEV C7 PROYECTOS S.A.C.",
+      "SUP2400204-GRUPO SERMINCO S.A.C.",
+      "SUP2300220-SANTISTEBAN TUÑOQUE CESAR DEIVI "
+    ],
+    "Tumbes": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400037-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400113-CONSORCIO EVZO ASOCIADOS S.A.C. - GIZED CONSULTORES S.A.C.",
+      "SUP2400203-EVZO ASOCIADOS S.A.C."
+    ],
+    "Ucayali": [
+      "ERH-ESPECIALISTA REGIONAL DE HIDROCARBUROS",
+      "SUP2400176-EVALUACION Y SUPERVISION EN ENERGIA E.I.R.L.",
+      "SUP2400039-SUPERVISION CONSULTORIA Y SERVICIOS EN ENERGIA S.A.C.",
+      "SUP2400092-BRAYAN YAIR LEON QUISPE",
+      "SUP2400127-JORGE MAXIMILIANO CHAVARRIA DELGADO"
+    ]
+  }
+}

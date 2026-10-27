@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supervisión de Hidrocarburos · Registro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="marca">
+      <span class="logo">SH</span>
+      <div>
+        <h1>Registro de acciones de supervisión de hidrocarburos</h1>
+        <p id="subtitulo">Cargando…</p>
+      </div>
+    </div>
+    <nav>
+      <button class="nav-btn activo" data-vista="inicio">Inicio</button>
+      <button class="nav-btn" data-vista="registro">Registro</button>
+      <button class="nav-btn" data-vista="consultar">Consultar registros</button>
+      <button class="nav-btn" data-vista="exportar">Exportar Excel</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="vista-inicio" class="vista activa">
+      <div class="bienvenida">
+        <h2>Bienvenido</h2>
+        <p>Digitaliza la hoja «Registro» del libro de supervisión: ingresa, consulta y actualiza los registros, y genera el Excel a partir de lo guardado.</p>
+      </div>
+      <div class="tarjetas">
+        <button class="tarjeta" data-ir="registro"><span class="icono">＋</span><strong>Registro</strong><small>Ingresar una nueva acción de supervisión</small></button>
+        <button class="tarjeta" data-ir="consultar"><span class="icono">☰</span><strong>Consultar registros</strong><small>Buscar, filtrar, editar o eliminar</small></button>
+        <button class="tarjeta" data-ir="exportar"><span class="icono">⇩</span><strong>Exportar Excel</strong><small>Descargar el reporte con las hojas auxiliares</small></button>
+      </div>
+      <div class="resumen" id="resumen"></div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section id="vista-registro" class="vista">
+      <h2 id="titulo-form">Nuevo registro</h2>
+
+      <form id="form" novalidate>
+        <fieldset>
+          <legend>Cabecera (Datos de la Oficina Regional)</legend>
+          <div class="fila">
+            <label>Mes que presenta
+              <select id="mes"></select>
+            </label>
+            <label>Oficina Regional
+              <select id="oficina"></select>
+            </label>
+          </div>
+          <p class="ayuda">Estos dos datos van en la cabecera del Excel. Las provincias, distritos y empresas dependen de la oficina regional.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Clasificación</legend>
+          <div class="fila">
+            <label>Acción *<select id="accion" name="accion"></select><span class="error" data-error="accion"></span></label>
+            <label>Acción Específica *<select id="accion_especifica" name="accion_especifica"></select><span class="error" data-error="accion_especifica"></span></label>
+            <label>Sub Acción Específica *<select id="sub_accion" name="sub_accion"></select><span class="error" data-error="sub_accion"></span></label>
+          </div>
+          <div class="fila">
+            <label>Tipo de Agente *<select id="tipo_agente" name="tipo_agente"></select><span class="error" data-error="tipo_agente"></span></label>
+            <label>Actividad *<select id="actividad" name="actividad"></select><span class="error" data-error="actividad"></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ubicación</legend>
+          <div class="fila">
+            <label>Zona (Provincia) *<select id="provincia" name="provincia"></select><span class="error" data-error="provincia"></span></label>
+            <label>Zona (Distrito) *<select id="distrito" name="distrito"></select><span class="error" data-error="distrito"></span></label>
+            <label>Tipo de Transporte Empleado *<select id="transporte" name="transporte"></select><span class="error" data-error="transporte"></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de supervisión</legend>
+          <div class="fila">
+            <label>N° de Supervisores participantes *<input id="n_supervisores" name="n_supervisores" type="number" min="1" step="1" inputmode="numeric"><span class="error" data-error="n_supervisores"></span></label>
+            <label>Empresa Supervisora *<select id="empresa" name="empresa"></select><span class="error" data-error="empresa"></span></label>
+            <label>Calidad del entregable (informe mensual) *<select id="calidad" name="calidad"></select><span class="error" data-error="calidad"></span></label>
+          </div>
+          <div class="fila">
+            <label>CONTRATO (se calcula solo)<input id="contrato" type="text" readonly placeholder="Se obtiene de la Empresa Supervisora"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Referencias</legend>
+          <div class="fila">
+            <label>N° de Expediente SIGED Involucrado *<input id="expediente_siged" name="expediente_siged" type="text" inputmode="numeric" placeholder="202400229005"><span class="error" data-error="expediente_siged"></span></label>
+            <label>Carta Línea *<input id="carta_linea" name="carta_linea" type="text" placeholder="1064353-1"><span class="error" data-error="carta_linea"></span></label>
+          </div>
+          <label>Observaciones (para futuras mejoras)<textarea id="observaciones" name="observaciones" rows="3"></textarea></label>
+        </fieldset>
+
+        <div class="botones">
+          <button type="submit" class="primario" id="btn-guardar">Guardar</button>
+          <button type="button" id="btn-limpiar">Limpiar</button>
+          <button type="button" id="btn-cancelar" class="oculto">Cancelar edición</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- CONSULTAR -->
+    <section id="vista-consultar" class="vista">
+      <h2>Consultar registros</h2>
+      <div class="filtros">
+        <input id="f-q" type="search" placeholder="Buscar (expediente, carta, empresa, observaciones…)">
+        <select id="f-accion"></select>
+        <select id="f-empresa"></select>
+        <select id="f-provincia"></select>
+        <select id="f-calidad"></select>
+        <button id="f-limpiar" type="button">Limpiar filtros</button>
+      </div>
+      <p id="conteo" class="ayuda"></p>
+      <div class="tabla-caja">
+        <table>
+          <thead>
+            <tr><th>N°</th><th>Acción</th><th>Acción Específica</th><th>Sub Acción</th><th>Tipo de Agente</th><th>Actividad</th>
+              <th>Provincia / Distrito</th><th>Transporte</th><th>Sup.</th><th>Contrato</th><th>Calidad</th>
+              <th>Expediente SIGED</th><th>Carta Línea</th><th>Observaciones</th><th>Acciones</th></tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- EXPORTAR -->
+    <section id="vista-exportar" class="vista">
+      <h2>Exportar Excel</h2>
+      <div class="caja">
+        <p>Se genera una copia de la plantilla oficial con los <strong id="exp-total">0</strong> registros guardados, a partir de la fila 22 de la hoja «Registro». Las hojas auxiliares, tablas, validaciones y macros de la plantilla se conservan.</p>
+        <p class="ayuda">Mes: <span id="exp-mes"></span> · Oficina Regional: <span id="exp-oficina"></span></p>
+        <button class="primario" id="btn-exportar">Exportar Excel</button>
+        <p id="exp-msg" class="ayuda"></p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="dlg-eliminar">
+    <form method="dialog">
+      <h3>¿Eliminar este registro?</h3>
+      <p id="dlg-texto"></p>
+      <div class="botones">
+        <button value="cancelar">Cancelar</button>
+        <button value="ok" class="peligro" id="dlg-ok">Sí, eliminar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="aviso" class="aviso" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
