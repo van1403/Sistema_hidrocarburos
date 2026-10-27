@@ -1,4 +1,4 @@
-# Sistema de registro de acciones de supervisión de hidrocarburos
+# Hydrocarbon monitoring action recording system
 
 Proyecto grupal de SENATI hecho en Visual Studio Code.
 
@@ -167,3 +167,4 @@ Corre 39 pruebas contra una base temporal (15 registros válidos, 8 casos de val
 4. Eliminar otro registro con la confirmación.
 5. Exportar Excel y abrirlo: verificar la fila registrada y las hojas auxiliares.
 6. Cerrar el servidor (Ctrl + C), volver a ejecutar `npm start` y comprobar que los datos siguen.
+# Sistema_hidrocarburos
