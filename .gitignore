@@ -1,0 +1,5 @@
+node_modules/
+.env
+database/supervision.db
+database/supervision.db-wal
+database/supervision.db-shm
