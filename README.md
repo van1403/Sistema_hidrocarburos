@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-﻿# servicio-hidrocarburos
-=======
-# Hydrocarbon monitoring action recording system
+﻿# Hydrocarbon monitoring action recording system
 
 Proyecto grupal de SENATI hecho en Visual Studio Code.
 
@@ -46,9 +43,10 @@ También viene `database/supervision_prueba.db` con 15 registros; para usarla se
 3. Ir a Project Settings > API y copiar:
    - Project URL
    - la clave `service_role` (la que dice «secret»)
-4. En la carpeta `backend`, copiar `.env.example` como `.env` y completar:
+4. En la carpeta `backend`, crear un archivo llamado `.env` (se puede copiar de `.env.example`) y completar:
 
    ```
+   PORT=3000
    DB_DRIVER=supabase
    SUPABASE_URL=https://TU-PROYECTO.supabase.co
    SUPABASE_SERVICE_KEY=la-clave-service_role
@@ -60,22 +58,17 @@ También viene `database/supervision_prueba.db` con 15 registros; para usarla se
 
 Importante: la clave `service_role` es secreta. Va solo en `backend/.env`, que está en `.gitignore` y no se sube a GitHub. Nunca se pega en el frontend ni en un mensaje del grupo.
 
-## 4. Subir el proyecto a GitHub
+Si alguien clona el repositorio sin el archivo `.env`, el sistema usa SQLite y los datos quedan solo en su computadora. Para compartir la misma base de Supabase, cada integrante crea su `.env` con los mismos datos de conexión, que se pasan en privado.
 
-1. En https://github.com crear un repositorio nuevo (New repository), vacío: sin README, sin .gitignore y sin licencia (el proyecto ya los trae).
-2. En la terminal de VS Code, en la carpeta raíz del proyecto (donde está este README):
+## 4. Trabajo en equipo con GitHub
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Proyecto inicial: sistema de supervisión de hidrocarburos"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/supervision-hidrocarburos.git
-   git push -u origin main
-   ```
+Repositorio: https://github.com/van1403/Sistema_hidrocarburos
 
-3. Revisar en GitHub que no aparezcan `node_modules` ni `.env`.
-4. Para el trabajo en equipo: se agregan los compañeros en Settings > Collaborators, y cada integrante hace `git clone`, entra a `backend`, corre `npm install` y crea su propio `.env`. Conviene que cada uno trabaje en su rama (`git checkout -b feature/nombre`) y se junte con Pull Request.
+- Cada integrante trabaja en su rama (por ejemplo `feature/ruby`).
+- Los cambios se juntan primero en `develop` y, al final, en `main`.
+- Antes de empezar a trabajar: `git pull origin develop`.
+- Para subir cambios: `git add .`, `git commit -m "mensaje"` y `git push`.
+- Revisar con `git status` que no aparezcan `.env` ni `node_modules` antes de hacer commit.
 
 ## 5. Estructura de carpetas
 
@@ -170,5 +163,3 @@ Corre 39 pruebas contra una base temporal (15 registros válidos, 8 casos de val
 4. Eliminar otro registro con la confirmación.
 5. Exportar Excel y abrirlo: verificar la fila registrada y las hojas auxiliares.
 6. Cerrar el servidor (Ctrl + C), volver a ejecutar `npm start` y comprobar que los datos siguen.
-# Sistema_hidrocarburos
->>>>>>> feature/ruby
