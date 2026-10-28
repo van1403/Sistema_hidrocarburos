@@ -1,4 +1,4 @@
-// Frontend: formulario, tabla, filtros y exportación. Se comunica con el backend por fetch().
+// Frontend: form, table, filters and export. Communicates with the backend via fetch().
 const $ = (id) => document.getElementById(id);
 const API = '/api';
 let P = null;            // parámetros (catálogos + cabecera)
@@ -153,6 +153,8 @@ $('form').addEventListener('submit', async (ev) => {
   const locales = validarLocal(datos);
   if (Object.keys(locales).length) { mostrarErrores(locales); aviso('Revisa los campos marcados', true); return; }
   limpiarErrores();
+  const btn = $('btn-guardar');
+  btn.disabled = true;
   try {
     if (editandoId) { await api('PUT', `/registros/${editandoId}`, datos); aviso('Registro actualizado'); }
     else { await api('POST', '/registros', datos); aviso('Registro guardado'); }
@@ -163,6 +165,8 @@ $('form').addEventListener('submit', async (ev) => {
   } catch (e) {
     if (e.errores) mostrarErrores(e.errores);
     aviso(e.message, true);
+  } finally {
+    btn.disabled = false;
   }
 });
 $('btn-limpiar').addEventListener('click', () => { nuevoFormulario(); });
@@ -179,29 +183,101 @@ function params() {
   return q.toString();
 }
 let cache = [];
+let orden = { campo: 'n', dir: 1 };
+let periodo = 'todo';
+
+// Fecha de creación del registro (SQLite la guarda como "AAAA-MM-DD hh:mm:ss" en UTC; Supabase como ISO)
+function fechaDe(r) {
+  const t = String(r.created_at || '');
+  if (!t) return null;
+  const d = new Date(t.includes('T') ? t : t.replace(' ', 'T') + 'Z');
+  return isNaN(d) ? null : d;
+}
+function enPeriodo(r) {
+  if (periodo === 'todo') return true;
+  const f = fechaDe(r);
+  if (!f) return false;
+  const hoy = new Date();
+  const ref = periodo === 'mes' ? new Date(hoy.getFullYear(), hoy.getMonth(), 1) : new Date(hoy.getFullYear(), hoy.getMonth() - 1, 1);
+  return f.getFullYear() === ref.getFullYear() && f.getMonth() === ref.getMonth();
+}
+function valorOrden(r, campo) {
+  if (campo === 'n') return r.numero;
+  if (campo === 'ubicacion') return `${r.provincia} ${r.distrito}`.toLowerCase();
+  return String(r[campo] ?? '').trim().toLowerCase();
+}
+
 async function cargarTabla() {
-  cache = await api('GET', '/registros' + (params() ? '?' + params() : ''));
-  const total = (await api('GET', '/registros')).length;
-  $('conteo').textContent = `${cache.length} registro(s) mostrados de ${total} guardados`;
-  $('tbody').innerHTML = cache.length ? cache.map((r, i) => {
+  const todos = await api('GET', '/registros');
+  const numeros = Object.fromEntries(todos.map((r, i) => [r.id, i + 1]));
+  cache = (await api('GET', '/registros' + (params() ? '?' + params() : '')))
+    .map((r) => ({ ...r, numero: numeros[r.id] }))
+    .filter(enPeriodo)
+    .sort((a, b) => {
+      const x = valorOrden(a, orden.campo), y = valorOrden(b, orden.campo);
+      return (x < y ? -1 : x > y ? 1 : 0) * orden.dir;
+    });
+  const nombrePeriodo = { todo: '', mes: ' · este mes', anterior: ' · mes anterior' }[periodo];
+  $('conteo').textContent = `${cache.length} registro(s) mostrados de ${todos.length} guardados${nombrePeriodo}`;
+  $('tbody').innerHTML = cache.length ? cache.map((r) => {
     const cl = r.calidad.trim() === 'Buena' ? '' : r.calidad.trim() === 'Regular' ? 'regular' : 'mala';
     return `<tr>
-      <td>${i + 1}</td><td>${esc(r.accion)}</td><td>${esc(r.accion_especifica)}</td><td>${esc(r.sub_accion)}</td>
-      <td>${esc(r.tipo_agente)}</td><td>${esc(r.actividad)}</td><td>${esc(r.provincia)} / ${esc(r.distrito)}</td>
-      <td>${esc(r.transporte)}</td><td>${r.n_supervisores}</td><td>${esc(r.contrato)}</td>
+      <td>${r.numero}</td><td>${esc(r.accion_especifica)}</td><td>${esc(r.sub_accion)}</td>
+      <td>${esc(r.provincia)} / ${esc(r.distrito)}</td><td>${esc(r.contrato)}</td>
       <td><span class="etq ${cl}">${esc(r.calidad.trim())}</span></td><td>${esc(r.expediente_siged)}</td>
-      <td>${esc(r.carta_linea)}</td><td>${esc(r.observaciones)}</td>
-      <td class="acciones"><button data-editar="${r.id}">Editar</button> <button data-eliminar="${r.id}">Eliminar</button></td></tr>`;
-  }).join('') : '<tr><td colspan="15" class="vacio">No hay registros para mostrar.</td></tr>';
+      <td class="acciones"><button class="btn-ver" data-ver="${r.id}">Ver</button> <button data-editar="${r.id}">Editar</button> <button data-duplicar="${r.id}">Duplicar</button> <button data-eliminar="${r.id}">Eliminar</button></td></tr>`;
+  }).join('') : '<tr><td colspan="8" class="vacio">No hay registros para mostrar con estos filtros.</td></tr>';
+  document.querySelectorAll('th[data-orden]').forEach((th) => {
+    th.classList.toggle('asc', th.dataset.orden === orden.campo && orden.dir === 1);
+    th.classList.toggle('desc', th.dataset.orden === orden.campo && orden.dir === -1);
+  });
 }
+
+// Ordenar al hacer clic en un título de columna
+document.querySelectorAll('th[data-orden]').forEach((th) => th.addEventListener('click', () => {
+  orden = { campo: th.dataset.orden, dir: orden.campo === th.dataset.orden ? -orden.dir : 1 };
+  cargarTabla();
+}));
+// Filtro por periodo
+document.querySelectorAll('[data-periodo]').forEach((b) => b.addEventListener('click', () => {
+  periodo = b.dataset.periodo;
+  document.querySelectorAll('[data-periodo]').forEach((x) => x.classList.toggle('on', x === b));
+  cargarTabla();
+}));
 ['f-q', 'f-accion', 'f-empresa', 'f-provincia', 'f-calidad'].forEach((id) => $(id).addEventListener('input', cargarTabla));
 $('f-limpiar').addEventListener('click', () => {
   ['f-q', 'f-accion', 'f-empresa', 'f-provincia', 'f-calidad'].forEach((id) => ($(id).value = ''));
+  periodo = 'todo';
+  document.querySelectorAll('[data-periodo]').forEach((x) => x.classList.toggle('on', x.dataset.periodo === 'todo'));
   cargarTabla();
 });
 
 $('tbody').addEventListener('click', (ev) => {
   const ed = ev.target.dataset.editar, el = ev.target.dataset.eliminar;
+  const ve = ev.target.dataset.ver, du = ev.target.dataset.duplicar;
+  if (ve) {
+    const r = cache.find((x) => x.id === Number(ve));
+    const filas = [['Acción', r.accion], ['Acción Específica', r.accion_especifica], ['Sub Acción', r.sub_accion],
+      ['Tipo de Agente', r.tipo_agente], ['Actividad', r.actividad], ['Provincia', r.provincia], ['Distrito', r.distrito],
+      ['Transporte', r.transporte], ['N° de Supervisores', r.n_supervisores], ['Empresa Supervisora', r.empresa],
+      ['Contrato', r.contrato], ['Calidad del entregable', r.calidad.trim()], ['Expediente SIGED', r.expediente_siged],
+      ['Carta Línea', r.carta_linea], ['Observaciones', r.observaciones || '—']];
+    $('ver-detalle').innerHTML = filas.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+    $('dlg-ver').showModal();
+  }
+  if (du) {
+    // Copia el registro al formulario como nuevo; el expediente y la carta se dejan vacíos para escribirlos
+    const r = cache.find((x) => x.id === Number(du));
+    editandoId = null;
+    irA('registro');
+    cargarListasBase();
+    restaurar({ ...r, expediente_siged: '', carta_linea: '' });
+    limpiarErrores();
+    $('titulo-form').textContent = 'Nuevo registro (copia de otro)';
+    $('btn-guardar').textContent = 'Guardar';
+    $('btn-cancelar').classList.remove('oculto');
+    aviso('Copia lista: escribe el nuevo expediente y la carta línea');
+  }
   if (ed) {
     const r = cache.find((x) => x.id === Number(ed));
     editandoId = r.id;
@@ -220,6 +296,7 @@ $('tbody').addEventListener('click', (ev) => {
     $('dlg-eliminar').showModal();
   }
 });
+$('ver-cerrar').addEventListener('click', () => $('dlg-ver').close());
 $('dlg-eliminar').addEventListener('close', async () => {
   if ($('dlg-eliminar').returnValue !== 'ok' || !aEliminar) return;
   try { await api('DELETE', `/registros/${aEliminar}`); aviso('Registro eliminado'); }
@@ -255,15 +332,50 @@ document.querySelectorAll('[data-vista]').forEach((b) => b.addEventListener('cli
 document.querySelectorAll('[data-ir]').forEach((b) => b.addEventListener('click', () => irA(b.dataset.ir)));
 
 function actualizarCabeceraVisible() {
-  $('subtitulo').textContent = `Oficina Regional ${P.cabecera.oficina} · ${P.cabecera.mes} · Base de datos: ${P.motor}`;
+  $('subtitulo').textContent = `Registro de acciones · Oficina Regional ${P.cabecera.oficina}`;
+  $('st-mes').textContent = P.cabecera.mes;
+  $('st-oficina').textContent = P.cabecera.oficina;
+  $('pie-db').textContent = `Base de datos: ${P.motor}`;
   $('exp-mes').textContent = P.cabecera.mes;
   $('exp-oficina').textContent = P.cabecera.oficina;
 }
+
+function graficos(lista) {
+  if (!lista.length) {
+    const vacio = '<p class="ayuda">Aún no hay datos para graficar.</p>';
+    $('graf-acciones').innerHTML = vacio;
+    $('graf-calidad').innerHTML = vacio;
+    return;
+  }
+  // Barras: registros por acción
+  const porAccion = {};
+  lista.forEach((r) => { porAccion[r.accion] = (porAccion[r.accion] || 0) + 1; });
+  const filas = Object.entries(porAccion).sort((a, b) => b[1] - a[1]);
+  const max = filas[0][1];
+  $('graf-acciones').innerHTML = filas.map(([nombre, n]) =>
+    `<div class="barra-fila"><span>${esc(nombre)}</span><div class="pista"><div class="rel" style="width:${Math.round((n / max) * 100)}%"></div></div><b>${n}</b></div>`).join('');
+  // Dona: calidad del entregable
+  const cal = { Buena: 0, Regular: 0, Mala: 0 };
+  lista.forEach((r) => { const k = r.calidad.trim(); if (k in cal) cal[k]++; });
+  const colores = { Buena: '#16835d', Regular: '#e0a81f', Mala: '#bd3d37' };
+  let acum = 0;
+  const tramos = Object.entries(cal).filter(([, n]) => n > 0).map(([k, n]) => {
+    const ini = acum; acum += (n / lista.length) * 100;
+    return `${colores[k]} ${ini}% ${acum}%`;
+  }).join(', ');
+  $('graf-calidad').innerHTML = `<div class="dona-caja"><div class="dona" style="background: conic-gradient(${tramos})"><b>${lista.length}</b></div>
+    <div class="leyenda">${Object.entries(cal).map(([k, n]) => `<span><i style="background:${colores[k]}"></i>${k} · ${n}</span>`).join('')}</div></div>`;
+}
+
 async function refrescarResumen() {
   try {
-    const n = (await api('GET', '/registros')).length;
-    $('resumen').textContent = `Registros guardados: ${n} de ${P.maxRegistros} que admite la plantilla.`;
+    const lista = await api('GET', '/registros');
+    const n = lista.length;
+    $('st-total').textContent = n;
+    $('st-cap').textContent = `de ${P.maxRegistros} que admite la plantilla`;
     $('exp-total').textContent = n;
+    if (n === 0) $('exp-msg').textContent = 'Todavía no hay registros: el archivo saldrá con la hoja Registro vacía.';
+    graficos(lista);
   } catch (e) { /* sin conexión con el servidor */ }
 }
 

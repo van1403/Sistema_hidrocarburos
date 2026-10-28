@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Supervisión de Hidrocarburos · Registro</title>
+  <title>Supervisión de Hidrocarburos · SENATI</title>
+  <meta name="description" content="Sistema de registro de acciones de supervisión de hidrocarburos con exportación a Excel.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5cab'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3ESH%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mejoras.css">
 </head>
 <body>
   <header class="barra">
     <div class="marca">
       <span class="logo">SH</span>
       <div>
-        <h1>Registro de acciones de supervisión de hidrocarburos</h1>
+        <h1>Supervisión de Hidrocarburos</h1>
         <p id="subtitulo">Cargando…</p>
       </div>
     </div>
@@ -27,24 +30,33 @@
     <!-- INICIO -->
     <section id="vista-inicio" class="vista activa">
       <div class="bienvenida">
-        <h2>Bienvenido</h2>
-        <p>Digitaliza la hoja «Registro» del libro de supervisión: ingresa, consulta y actualiza los registros, y genera el Excel a partir de lo guardado.</p>
+        <h2>Bienvenido al sistema de supervisión</h2>
+        <p>Registra tus acciones de supervisión de hidrocarburos, búscalas y corrígelas cuando quieras, y descarga el reporte en Excel con un clic.</p>
       </div>
       <div class="tarjetas">
         <button class="tarjeta" data-ir="registro"><span class="icono">＋</span><strong>Registro</strong><small>Ingresar una nueva acción de supervisión</small></button>
         <button class="tarjeta" data-ir="consultar"><span class="icono">☰</span><strong>Consultar registros</strong><small>Buscar, filtrar, editar o eliminar</small></button>
         <button class="tarjeta" data-ir="exportar"><span class="icono">⇩</span><strong>Exportar Excel</strong><small>Descargar el reporte con las hojas auxiliares</small></button>
       </div>
-      <div class="resumen" id="resumen"></div>
+      <div class="stats" id="stats">
+        <div class="stat"><span class="stat-etq">Registros guardados</span><strong id="st-total">0</strong><small id="st-cap"></small></div>
+        <div class="stat"><span class="stat-etq">Mes que presenta</span><strong id="st-mes">-</strong><small>Se cambia en la cabecera del registro</small></div>
+        <div class="stat"><span class="stat-etq">Oficina Regional</span><strong id="st-oficina">-</strong><small>Define provincias y empresas disponibles</small></div>
+      </div>
+      <div class="graficos">
+        <div class="panel"><h3>Registros por acción</h3><div id="graf-acciones"></div></div>
+        <div class="panel"><h3>Calidad del entregable</h3><div id="graf-calidad"></div></div>
+      </div>
     </section>
 
     <!-- REGISTRO -->
     <section id="vista-registro" class="vista">
       <h2 id="titulo-form">Nuevo registro</h2>
+      <p class="nota">Los campos marcados con * son obligatorios. Las listas se cargan desde el libro de Excel oficial.</p>
 
       <form id="form" novalidate>
         <fieldset>
-          <legend>Cabecera (Datos de la Oficina Regional)</legend>
+          <legend>1. Cabecera (Datos de la Oficina Regional)</legend>
           <div class="fila">
             <label>Mes que presenta
               <select id="mes"></select>
@@ -57,7 +69,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Clasificación</legend>
+          <legend>2. Clasificación</legend>
           <div class="fila">
             <label>Acción *<select id="accion" name="accion"></select><span class="error" data-error="accion"></span></label>
             <label>Acción Específica *<select id="accion_especifica" name="accion_especifica"></select><span class="error" data-error="accion_especifica"></span></label>
@@ -70,7 +82,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Ubicación</legend>
+          <legend>3. Ubicación</legend>
           <div class="fila">
             <label>Zona (Provincia) *<select id="provincia" name="provincia"></select><span class="error" data-error="provincia"></span></label>
             <label>Zona (Distrito) *<select id="distrito" name="distrito"></select><span class="error" data-error="distrito"></span></label>
@@ -79,7 +91,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Datos de supervisión</legend>
+          <legend>4. Datos de supervisión</legend>
           <div class="fila">
             <label>N° de Supervisores participantes *<input id="n_supervisores" name="n_supervisores" type="number" min="1" step="1" inputmode="numeric"><span class="error" data-error="n_supervisores"></span></label>
             <label>Empresa Supervisora *<select id="empresa" name="empresa"></select><span class="error" data-error="empresa"></span></label>
@@ -91,7 +103,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Referencias</legend>
+          <legend>5. Referencias</legend>
           <div class="fila">
             <label>N° de Expediente SIGED Involucrado *<input id="expediente_siged" name="expediente_siged" type="text" inputmode="numeric" placeholder="202400229005"><span class="error" data-error="expediente_siged"></span></label>
             <label>Carta Línea *<input id="carta_linea" name="carta_linea" type="text" placeholder="1064353-1"><span class="error" data-error="carta_linea"></span></label>
@@ -111,20 +123,32 @@
     <section id="vista-consultar" class="vista">
       <h2>Consultar registros</h2>
       <div class="filtros">
-        <input id="f-q" type="search" placeholder="Buscar (expediente, carta, empresa, observaciones…)">
-        <select id="f-accion"></select>
-        <select id="f-empresa"></select>
-        <select id="f-provincia"></select>
-        <select id="f-calidad"></select>
+        <input id="f-q" type="search" aria-label="Buscar registros" placeholder="Buscar (expediente, carta, empresa, observaciones…)">
+        <select id="f-accion" aria-label="Filtrar por acción"></select>
+        <select id="f-empresa" aria-label="Filtrar por empresa"></select>
+        <select id="f-provincia" aria-label="Filtrar por provincia"></select>
+        <select id="f-calidad" aria-label="Filtrar por calidad"></select>
         <button id="f-limpiar" type="button">Limpiar filtros</button>
+      </div>
+      <div class="tools" id="periodos">
+        <button type="button" class="chip on" data-periodo="todo">Todos</button>
+        <button type="button" class="chip" data-periodo="mes">Este mes</button>
+        <button type="button" class="chip" data-periodo="anterior">Mes anterior</button>
       </div>
       <p id="conteo" class="ayuda"></p>
       <div class="tabla-caja">
         <table>
           <thead>
-            <tr><th>N°</th><th>Acción</th><th>Acción Específica</th><th>Sub Acción</th><th>Tipo de Agente</th><th>Actividad</th>
-              <th>Provincia / Distrito</th><th>Transporte</th><th>Sup.</th><th>Contrato</th><th>Calidad</th>
-              <th>Expediente SIGED</th><th>Carta Línea</th><th>Observaciones</th><th>Acciones</th></tr>
+            <tr>
+              <th class="orden asc" data-orden="n">N°</th>
+              <th class="orden" data-orden="accion_especifica">Acción Específica</th>
+              <th class="orden" data-orden="sub_accion">Sub Acción</th>
+              <th class="orden" data-orden="ubicacion">Provincia / Distrito</th>
+              <th class="orden" data-orden="contrato">Contrato</th>
+              <th class="orden" data-orden="calidad">Calidad</th>
+              <th class="orden" data-orden="expediente_siged">Expediente SIGED</th>
+              <th>Acciones</th>
+            </tr>
           </thead>
           <tbody id="tbody"></tbody>
         </table>
@@ -135,13 +159,23 @@
     <section id="vista-exportar" class="vista">
       <h2>Exportar Excel</h2>
       <div class="caja">
-        <p>Se genera una copia de la plantilla oficial con los <strong id="exp-total">0</strong> registros guardados, a partir de la fila 22 de la hoja «Registro». Las hojas auxiliares, tablas, validaciones y macros de la plantilla se conservan.</p>
+        <p>Se descarga una copia de la plantilla oficial con los <strong id="exp-total">0</strong> registros guardados.</p>
+        <ul class="lista-exp">
+          <li>Los datos se escriben en la hoja «Registro», desde la fila 22.</li>
+          <li>El campo CONTRATO se calcula con la fórmula del libro.</li>
+          <li>Se conservan las hojas auxiliares, tablas, validaciones y macros.</li>
+        </ul>
         <p class="ayuda">Mes: <span id="exp-mes"></span> · Oficina Regional: <span id="exp-oficina"></span></p>
         <button class="primario" id="btn-exportar">Exportar Excel</button>
         <p id="exp-msg" class="ayuda"></p>
       </div>
     </section>
   </main>
+
+  <footer class="pie">
+    <span>SENATI · Proyecto grupal · Supervisión de Hidrocarburos</span>
+    <span id="pie-db"></span>
+  </footer>
 
   <dialog id="dlg-eliminar">
     <form method="dialog">
@@ -152,6 +186,12 @@
         <button value="ok" class="peligro" id="dlg-ok">Sí, eliminar</button>
       </div>
     </form>
+  </dialog>
+
+  <dialog id="dlg-ver" class="dlg-ancho">
+    <h3>Detalle del registro</h3>
+    <dl id="ver-detalle" class="detalle"></dl>
+    <div class="botones"><button type="button" class="primario" id="ver-cerrar">Cerrar</button></div>
   </dialog>
 
   <div id="aviso" class="aviso" role="status"></div>
